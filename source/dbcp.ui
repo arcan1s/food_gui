@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>db_cp_window</class>
+ <widget class="QMainWindow" name="db_cp_window">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>451</width>
+    <height>103</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Скопировать базу данных</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="oldbut">
+    <property name="geometry">
+     <rect>
+      <x>345</x>
+      <y>10</y>
+      <width>95</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Обзор</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="newbut">
+    <property name="geometry">
+     <rect>
+      <x>345</x>
+      <y>35</y>
+      <width>95</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Обзор</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="cancelbut">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>70</y>
+      <width>81</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Отмена</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="okbut">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>70</y>
+      <width>81</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Ok</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="old_line">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>10</y>
+      <width>241</width>
+      <height>23</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="new_line">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>35</y>
+      <width>241</width>
+      <height>23</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="old_lab">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>91</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Старый файл</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="new_lab">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>35</y>
+      <width>91</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Новый файл</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>old_line</tabstop>
+  <tabstop>oldbut</tabstop>
+  <tabstop>new_line</tabstop>
+  <tabstop>newbut</tabstop>
+  <tabstop>okbut</tabstop>
+  <tabstop>cancelbut</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>cancelbut</sender>
+   <signal>clicked()</signal>
+   <receiver>db_cp_window</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>390</x>
+     <y>71</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>219</x>
+     <y>41</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
