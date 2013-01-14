@@ -22,11 +22,6 @@ from PyQt4 import QtCore, QtGui
 
 db = "db.dat"
 lang = "ENG"
-put_prot_line = QtGui.QLineEdit
-put_lip_line = QtGui.QLineEdit
-put_carb_line = QtGui.QLineEdit
-put_ccal_line = QtGui.QLineEdit
-put_glyc_line = QtGui.QLineEdit
 
 
 try:
