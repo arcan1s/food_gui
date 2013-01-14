@@ -163,41 +163,41 @@ class Ui_Food(object):
         Food.setTabOrder(self.searchbut, self.substitutebut)
         Food.setTabOrder(self.substitutebut, self.calcbut)
 
-    #def retranslateUi(self, Food):
-        #Food.setWindowTitle(_translate("Food", "Food", None))
-        #self.calcbut.setText(_translate("Food", "Посчитать", None))
-        #self.mass_lab.setText(_translate("Food", "Масса, г", None))
-        #self.prot_lab.setText(_translate("Food", "Белки", None))
-        #self.lip_lab.setText(_translate("Food", "Жиры", None))
-        #self.carb_lab.setText(_translate("Food", "Углеводы", None))
-        #self.ccal_lab.setText(_translate("Food", "Калорийность, ккал", None))
-        #self.glyc_lab.setText(_translate("Food", "Гликемический индекс", None))
-        #self.prot_sec_lab.setText(_translate("Food", "<html><head/><body><p align=\"right\"><br/></p></body></html>", None))
-        #self.lip_sec_lab.setText(_translate("Food", "<html><head/><body><p align=\"right\"><br/></p></body></html>", None))
-        #self.carb_sec_lab.setText(_translate("Food", "<html><head/><body><p align=\"right\"><br/></p></body></html>", None))
-        #self.ccal_sec_lab.setText(_translate("Food", "<html><head/><body><p align=\"right\"><br/></p></body></html>", None))
-        #self.glyc_sec_lab.setText(_translate("Food", "<html><head/><body><p align=\"right\"><br/></p></body></html>", None))
-        #self.searchbut.setText(_translate("Food", "Окно поиска", None))
-        #self.substitutebut.setText(_translate("Food", "Подставить", None))
-        #self.menu.setTitle(_translate("Food", "&Меню", None))
-        #self.menu_2.setTitle(_translate("Food", "&Справка", None))
-        #self.menu_3.setTitle(_translate("Food", "&Настройки", None))
-        #self.menu_add.setText(_translate("Food", "&Добавить продукт в базу данных", None))
-        #self.menu_add.setShortcut(_translate("Food", "Ctrl+N", None))
-        #self.menu_edit.setText(_translate("Food", "&Редактировать базу данных", None))
-        #self.menu_edit.setShortcut(_translate("Food", "Ctrl+W", None))
-        #self.menu_create.setText(_translate("Food", "&Создать меню", None))
-        #self.menu_create.setShortcut(_translate("Food", "Ctrl+M", None))
-        #self.menu_dbcp.setText(_translate("Food", "С&копировать базу данных", None))
-        #self.menu_exit.setText(_translate("Food", "&Выход", None))
-        #self.menu_exit.setShortcut(_translate("Food", "Ctrl+Q", None))
-        #self.menu_about.setText(_translate("Food", "&О программе", None))
-        #self.menu_dbsel.setText(_translate("Food", "Выбрать &базу данных", None))
-        #self.menu_search.setText(_translate("Food", "&Искать продукт в базе данных", None))
-        #self.menu_search.setShortcut(_translate("Food", "Ctrl+S", None))
-        #self.menu_lang.setText(_translate("Food", "Выбрать &язык", None))
-        #self.menu_help.setText(_translate("Food", "&Помощь", None))
-        #self.menu_help.setShortcut(_translate("Food", "F1", None))
+    def retranslateUi(self, Food):
+        Food.setWindowTitle(_translate("Food", "Food", None))
+        self.calcbut.setText(_translate("Food", "Посчитать", None))
+        self.mass_lab.setText(_translate("Food", "Масса, г", None))
+        self.prot_lab.setText(_translate("Food", "Белки", None))
+        self.lip_lab.setText(_translate("Food", "Жиры", None))
+        self.carb_lab.setText(_translate("Food", "Углеводы", None))
+        self.ccal_lab.setText(_translate("Food", "Калорийность, ккал", None))
+        self.glyc_lab.setText(_translate("Food", "Гликемический индекс", None))
+        self.prot_sec_lab.setText(_translate("Food", "<html><head/><body><p align=\"right\"><br/></p></body></html>", None))
+        self.lip_sec_lab.setText(_translate("Food", "<html><head/><body><p align=\"right\"><br/></p></body></html>", None))
+        self.carb_sec_lab.setText(_translate("Food", "<html><head/><body><p align=\"right\"><br/></p></body></html>", None))
+        self.ccal_sec_lab.setText(_translate("Food", "<html><head/><body><p align=\"right\"><br/></p></body></html>", None))
+        self.glyc_sec_lab.setText(_translate("Food", "<html><head/><body><p align=\"right\"><br/></p></body></html>", None))
+        self.searchbut.setText(_translate("Food", "Окно поиска", None))
+        self.substitutebut.setText(_translate("Food", "Подставить", None))
+        self.menu.setTitle(_translate("Food", "&Меню", None))
+        self.menu_2.setTitle(_translate("Food", "&Справка", None))
+        self.menu_3.setTitle(_translate("Food", "&Настройки", None))
+        self.menu_add.setText(_translate("Food", "&Добавить продукт в базу данных", None))
+        self.menu_add.setShortcut(_translate("Food", "Ctrl+N", None))
+        self.menu_edit.setText(_translate("Food", "&Редактировать базу данных", None))
+        self.menu_edit.setShortcut(_translate("Food", "Ctrl+W", None))
+        self.menu_create.setText(_translate("Food", "&Создать меню", None))
+        self.menu_create.setShortcut(_translate("Food", "Ctrl+M", None))
+        self.menu_dbcp.setText(_translate("Food", "С&копировать базу данных", None))
+        self.menu_exit.setText(_translate("Food", "&Выход", None))
+        self.menu_exit.setShortcut(_translate("Food", "Ctrl+Q", None))
+        self.menu_about.setText(_translate("Food", "&О программе", None))
+        self.menu_dbsel.setText(_translate("Food", "Выбрать &базу данных", None))
+        self.menu_search.setText(_translate("Food", "&Искать продукт в базе данных", None))
+        self.menu_search.setShortcut(_translate("Food", "Ctrl+S", None))
+        self.menu_lang.setText(_translate("Food", "Выбрать &язык", None))
+        self.menu_help.setText(_translate("Food", "&Помощь", None))
+        self.menu_help.setShortcut(_translate("Food", "F1", None))
 
 
 class Ui_About_Window(object):
@@ -222,22 +222,22 @@ class Ui_About_Window(object):
         QtCore.QObject.connect(self.exit, QtCore.SIGNAL(_fromUtf8("clicked()")), About_Window.close)
         QtCore.QMetaObject.connectSlotsByName(About_Window)
 
-    #def retranslateUi(self, About_Window):
-        #About_Window.setWindowTitle(_translate("About_Window", "О программе", None))
-        #self.about.setHtml(_translate("About_Window", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-#"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-#"p, li { white-space: pre-wrap; }\n"
-#"</style></head><body style=\" font-family:\'Droid Sans\'; font-size:10pt; font-weight:400; font-style:normal;\">\n"
-#"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Food 1.1.0</p>\n"
-#"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Лицензия: GPL</p>\n"
-#"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n"
-#"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Простенькая программа-калькулятор на питоне, подсчитывающая БЖУ, калорийность и гликемический индекс употребляемых продуктов на основании базы данных.</p>\n"
-#"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n"
-#"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Автор: Евгений Алексеев aka arcanis</p>\n"
-#"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">e-mail: esalexeev@gmail.com</p>\n"
-#"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Jabber: arcanis@jabber.ru</p>\n"
-#"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">ICQ: 407-398-235</p></body></html>", None))
-        #self.exit.setText(_translate("About_Window", "Закрыть", None))
+    def retranslateUi(self, About_Window):
+        About_Window.setWindowTitle(_translate("About_Window", "О программе", None))
+        self.about.setHtml(_translate("About_Window", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:\'Droid Sans\'; font-size:10pt; font-weight:400; font-style:normal;\">\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Food 1.1.0</p>\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Лицензия: GPL</p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Простенькая программа-калькулятор на питоне, подсчитывающая БЖУ, калорийность и гликемический индекс употребляемых продуктов на основании базы данных.</p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Автор: Евгений Алексеев aka arcanis</p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">e-mail: esalexeev@gmail.com</p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Jabber: arcanis@jabber.ru</p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">ICQ: 407-398-235</p></body></html>", None))
+        self.exit.setText(_translate("About_Window", "Закрыть", None))
 
 
 class Ui_Add(object):
@@ -309,16 +309,16 @@ class Ui_Add(object):
         Add.setTabOrder(self.glyc_line, self.okbut)
         Add.setTabOrder(self.okbut, self.cancelbut)
 
-    #def retranslateUi(self, Add):
-        #Add.setWindowTitle(_translate("Add", "Добавить", None))
-        #self.cancelbut.setText(_translate("Add", "Отмена", None))
-        #self.okbut.setText(_translate("Add", "Ok", None))
-        #self.subs_lab.setText(_translate("Add", "Продукт", None))
-        #self.prot_lab.setText(_translate("Add", "Белки", None))
-        #self.lip_lab.setText(_translate("Add", "Жиры", None))
-        #self.carb_lab.setText(_translate("Add", "Углеводы", None))
-        #self.ccal_lab.setText(_translate("Add", "Калорийность, ккал", None))
-        #self.glyc_lab.setText(_translate("Add", "Гликемический индекс", None))
+    def retranslateUi(self, Add):
+        Add.setWindowTitle(_translate("Add", "Добавить", None))
+        self.cancelbut.setText(_translate("Add", "Отмена", None))
+        self.okbut.setText(_translate("Add", "Ok", None))
+        self.subs_lab.setText(_translate("Add", "Продукт", None))
+        self.prot_lab.setText(_translate("Add", "Белки", None))
+        self.lip_lab.setText(_translate("Add", "Жиры", None))
+        self.carb_lab.setText(_translate("Add", "Углеводы", None))
+        self.ccal_lab.setText(_translate("Add", "Калорийность, ккал", None))
+        self.glyc_lab.setText(_translate("Add", "Гликемический индекс", None))
 
 
 class Ui_Calc_Window(object):
@@ -443,36 +443,36 @@ class Ui_Calc_Window(object):
         Calc_Window.setTabOrder(self.savebut, self.deletebut)
         Calc_Window.setTabOrder(self.deletebut, self.exitbut)
 
-    #def retranslateUi(self, Calc_Window):
-        #Calc_Window.setWindowTitle(_translate("Calc_Window", "Расчитать", None))
-        #self.search_lab.setText(_translate("Calc_Window", "Продукт", None))
-        #self.searchbut.setText(_translate("Calc_Window", "Искать", None))
-        #self.prot_lab.setText(_translate("Calc_Window", "Белки", None))
-        #self.lip_lab.setText(_translate("Calc_Window", "Жиры", None))
-        #self.prot_sec_lab.setText(_translate("Calc_Window", "<html><head/><body><p align=\"right\"><br/></p></body></html>", None))
-        #self.lip_sec_lab.setText(_translate("Calc_Window", "<html><head/><body><p align=\"right\"><br/></p></body></html>", None))
-        #self.carb_lab.setText(_translate("Calc_Window", "Углеводы", None))
-        #self.ccal_sec_lab.setText(_translate("Calc_Window", "<html><head/><body><p align=\"right\"><br/></p></body></html>", None))
-        #self.carb_sec_lab.setText(_translate("Calc_Window", "<html><head/><body><p align=\"right\"><br/></p></body></html>", None))
-        #self.ccal_lab.setText(_translate("Calc_Window", "Калорийность, ккал", None))
-        #self.glyc_lab.setText(_translate("Calc_Window", "Гликемический индекс", None))
-        #self.glyc_sec_lab.setText(_translate("Calc_Window", "<html><head/><body><p align=\"right\"><br/></p></body></html>", None))
-        #self.addbut.setText(_translate("Calc_Window", "Добавить", None))
-        #self.mass_lab.setText(_translate("Calc_Window", "Масса, г", None))
-        #self.tot_ccal_lab.setText(_translate("Calc_Window", "Калорийность, ккал", None))
-        #self.tot_lip_lab.setText(_translate("Calc_Window", "Жиры", None))
-        #self.tot_prot_lab.setText(_translate("Calc_Window", "Белки", None))
-        #self.tot_prot_sec_lab.setText(_translate("Calc_Window", "<html><head/><body><p align=\"right\"><br/></p></body></html>", None))
-        #self.tot_lip_sec_lab.setText(_translate("Calc_Window", "<html><head/><body><p align=\"right\"><br/></p></body></html>", None))
-        #self.tot_ccal_sec_lab.setText(_translate("Calc_Window", "<html><head/><body><p align=\"right\"><br/></p></body></html>", None))
-        #self.tot_carb_sec_lab.setText(_translate("Calc_Window", "<html><head/><body><p align=\"right\"><br/></p></body></html>", None))
-        #self.tot_carb_lab.setText(_translate("Calc_Window", "Углеводы", None))
-        #self.total_lab.setText(_translate("Calc_Window", "<html><head/><body><p align=\"center\">Всего:</p></body></html>", None))
-        #self.savebut.setText(_translate("Calc_Window", "Сохранить в файл", None))
-        #self.exitbut.setText(_translate("Calc_Window", "Закрыть", None))
-        #self.deletebut.setText(_translate("Calc_Window", "Очистить", None))
-        #self.searchwinbut.setText(_translate("Calc_Window", "Окно поиска", None))
-        #self.substitutebut.setText(_translate("Calc_Window", "Подставить", None))
+    def retranslateUi(self, Calc_Window):
+        Calc_Window.setWindowTitle(_translate("Calc_Window", "Расчитать", None))
+        self.search_lab.setText(_translate("Calc_Window", "Продукт", None))
+        self.searchbut.setText(_translate("Calc_Window", "Искать", None))
+        self.prot_lab.setText(_translate("Calc_Window", "Белки", None))
+        self.lip_lab.setText(_translate("Calc_Window", "Жиры", None))
+        self.prot_sec_lab.setText(_translate("Calc_Window", "<html><head/><body><p align=\"right\"><br/></p></body></html>", None))
+        self.lip_sec_lab.setText(_translate("Calc_Window", "<html><head/><body><p align=\"right\"><br/></p></body></html>", None))
+        self.carb_lab.setText(_translate("Calc_Window", "Углеводы", None))
+        self.ccal_sec_lab.setText(_translate("Calc_Window", "<html><head/><body><p align=\"right\"><br/></p></body></html>", None))
+        self.carb_sec_lab.setText(_translate("Calc_Window", "<html><head/><body><p align=\"right\"><br/></p></body></html>", None))
+        self.ccal_lab.setText(_translate("Calc_Window", "Калорийность, ккал", None))
+        self.glyc_lab.setText(_translate("Calc_Window", "Гликемический индекс", None))
+        self.glyc_sec_lab.setText(_translate("Calc_Window", "<html><head/><body><p align=\"right\"><br/></p></body></html>", None))
+        self.addbut.setText(_translate("Calc_Window", "Добавить", None))
+        self.mass_lab.setText(_translate("Calc_Window", "Масса, г", None))
+        self.tot_ccal_lab.setText(_translate("Calc_Window", "Калорийность, ккал", None))
+        self.tot_lip_lab.setText(_translate("Calc_Window", "Жиры", None))
+        self.tot_prot_lab.setText(_translate("Calc_Window", "Белки", None))
+        self.tot_prot_sec_lab.setText(_translate("Calc_Window", "<html><head/><body><p align=\"right\"><br/></p></body></html>", None))
+        self.tot_lip_sec_lab.setText(_translate("Calc_Window", "<html><head/><body><p align=\"right\"><br/></p></body></html>", None))
+        self.tot_ccal_sec_lab.setText(_translate("Calc_Window", "<html><head/><body><p align=\"right\"><br/></p></body></html>", None))
+        self.tot_carb_sec_lab.setText(_translate("Calc_Window", "<html><head/><body><p align=\"right\"><br/></p></body></html>", None))
+        self.tot_carb_lab.setText(_translate("Calc_Window", "Углеводы", None))
+        self.total_lab.setText(_translate("Calc_Window", "<html><head/><body><p align=\"center\">Всего:</p></body></html>", None))
+        self.savebut.setText(_translate("Calc_Window", "Сохранить в файл", None))
+        self.exitbut.setText(_translate("Calc_Window", "Закрыть", None))
+        self.deletebut.setText(_translate("Calc_Window", "Очистить", None))
+        self.searchwinbut.setText(_translate("Calc_Window", "Окно поиска", None))
+        self.substitutebut.setText(_translate("Calc_Window", "Подставить", None))
 
 
 class Ui_Complete_Window(object):
@@ -494,9 +494,9 @@ class Ui_Complete_Window(object):
         QtCore.QObject.connect(self.exitbut, QtCore.SIGNAL(_fromUtf8("clicked()")), Complete_Window.close)
         QtCore.QMetaObject.connectSlotsByName(Complete_Window)
 
-    #def retranslateUi(self, Complete_Window):
-        #Complete_Window.setWindowTitle(_translate("Complete_Window", "Подставить", None))
-        #self.exitbut.setText(_translate("Complete_Window", "Закрыть", None))
+    def retranslateUi(self, Complete_Window):
+        Complete_Window.setWindowTitle(_translate("Complete_Window", "Подставить", None))
+        self.exitbut.setText(_translate("Complete_Window", "Закрыть", None))
 
 
 class Ui_db_cp_window(object):
@@ -540,14 +540,14 @@ class Ui_db_cp_window(object):
         db_cp_window.setTabOrder(self.newbut, self.okbut)
         db_cp_window.setTabOrder(self.okbut, self.cancelbut)
 
-    #def retranslateUi(self, db_cp_window):
-        #db_cp_window.setWindowTitle(_translate("db_cp_window", "Скопировать базу данных", None))
-        #self.oldbut.setText(_translate("db_cp_window", "Обзор", None))
-        #self.newbut.setText(_translate("db_cp_window", "Обзор", None))
-        #self.cancelbut.setText(_translate("db_cp_window", "Отмена", None))
-        #self.okbut.setText(_translate("db_cp_window", "Ok", None))
-        #self.old_lab.setText(_translate("db_cp_window", "Старый файл", None))
-        #self.new_lab.setText(_translate("db_cp_window", "Новый файл", None))
+    def retranslateUi(self, db_cp_window):
+        db_cp_window.setWindowTitle(_translate("db_cp_window", "Скопировать базу данных", None))
+        self.oldbut.setText(_translate("db_cp_window", "Обзор", None))
+        self.newbut.setText(_translate("db_cp_window", "Обзор", None))
+        self.cancelbut.setText(_translate("db_cp_window", "Отмена", None))
+        self.okbut.setText(_translate("db_cp_window", "Ok", None))
+        self.old_lab.setText(_translate("db_cp_window", "Старый файл", None))
+        self.new_lab.setText(_translate("db_cp_window", "Новый файл", None))
 
 
 class Ui_DB_Select(object):
@@ -580,11 +580,11 @@ class Ui_DB_Select(object):
         DB_Select.setTabOrder(self.dbsearch, self.dbselect)
         DB_Select.setTabOrder(self.dbselect, self.cancelbut)
 
-    #def retranslateUi(self, DB_Select):
-        #DB_Select.setWindowTitle(_translate("DB_Select", "Выбор базы данных", None))
-        #self.dbselect.setText(_translate("DB_Select", "Ok", None))
-        #self.dbsearch.setText(_translate("DB_Select", "Обзор", None))
-        #self.cancelbut.setText(_translate("DB_Select", "Отмена", None))
+    def retranslateUi(self, DB_Select):
+        DB_Select.setWindowTitle(_translate("DB_Select", "Выбор базы данных", None))
+        self.dbselect.setText(_translate("DB_Select", "Ok", None))
+        self.dbsearch.setText(_translate("DB_Select", "Обзор", None))
+        self.cancelbut.setText(_translate("DB_Select", "Отмена", None))
 
 
 class Ui_Edit(object):
@@ -670,19 +670,19 @@ class Ui_Edit(object):
         Edit.setTabOrder(self.deletebut, self.okbut)
         Edit.setTabOrder(self.okbut, self.cancelbut)
 
-    #def retranslateUi(self, Edit):
-        #Edit.setWindowTitle(_translate("Edit", "Редактировать", None))
-        #self.cancelbut.setText(_translate("Edit", "Отмена", None))
-        #self.okbut.setText(_translate("Edit", "Ok", None))
-        #self.deletebut.setText(_translate("Edit", "Удалить", None))
-        #self.prot_lab.setText(_translate("Edit", "Белки", None))
-        #self.lip_lab.setText(_translate("Edit", "Жиры", None))
-        #self.carb_lab.setText(_translate("Edit", "Углеводы", None))
-        #self.ccal_lab.setText(_translate("Edit", "Калорийность, ккал", None))
-        #self.glyc_lab.setText(_translate("Edit", "Гликемический индекс", None))
-        #self.subs_lab.setText(_translate("Edit", "Продукт", None))
-        #self.searchbut.setText(_translate("Edit", "Окно поиска", None))
-        #self.substitutebut.setText(_translate("Edit", "Подставить", None))
+    def retranslateUi(self, Edit):
+        Edit.setWindowTitle(_translate("Edit", "Редактировать", None))
+        self.cancelbut.setText(_translate("Edit", "Отмена", None))
+        self.okbut.setText(_translate("Edit", "Ok", None))
+        self.deletebut.setText(_translate("Edit", "Удалить", None))
+        self.prot_lab.setText(_translate("Edit", "Белки", None))
+        self.lip_lab.setText(_translate("Edit", "Жиры", None))
+        self.carb_lab.setText(_translate("Edit", "Углеводы", None))
+        self.ccal_lab.setText(_translate("Edit", "Калорийность, ккал", None))
+        self.glyc_lab.setText(_translate("Edit", "Гликемический индекс", None))
+        self.subs_lab.setText(_translate("Edit", "Продукт", None))
+        self.searchbut.setText(_translate("Edit", "Окно поиска", None))
+        self.substitutebut.setText(_translate("Edit", "Подставить", None))
 
 
 class Ui_Help_Window(object):
@@ -704,153 +704,153 @@ class Ui_Help_Window(object):
         QtCore.QObject.connect(self.exitbut, QtCore.SIGNAL(_fromUtf8("clicked()")), Help_Window.close)
         QtCore.QMetaObject.connectSlotsByName(Help_Window)
 
-    #def retranslateUi(self, Help_Window):
-        #Help_Window.setWindowTitle(_translate("Help_Window", "Помощь", None))
-        #self.exitbut.setText(_translate("Help_Window", "Закрыть", None))
-        #self.text.setHtml(_translate("Help_Window", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-#"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-#"p, li { white-space: pre-wrap; }\n"
-#"</style></head><body style=\" font-family:\'Droid Sans\'; font-size:10pt; font-weight:400; font-style:normal;\">\n"
-#"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:600;\">О проекте</span></p>\n"
-#"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Простая программа сделанная &quot;Just-for-fun&quot;. Может оказаться полезной, например, спортсменам, худеющим или просто следящим за своим здоровьем. Не троян и не патч Бармина. При попытке пользователя выстрелить себе в ногу, будет отчаянно сопротивляться.</p>\n"
-#"<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n"
-#"<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n"
-#"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:600;\">Что она делает?</span></p>\n"
-#"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Первоначально она задумывалась, как довольно простая программа (такой она и осталась), в процессе реализации она обросла различными функциями. Таким образом, помимо быстрой оценки &quot;Сколько я получу калорий, если съем %food&quot;, она может считать более сложные составы, составлять меню. А также работа с базой данных и небольшие удобства для пользователя.</p>\n"
-#"<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n"
-#"<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n"
-#"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:600;\">Об использовании</span></p>\n"
-#"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" text-decoration: underline;\">Основное окно:</span></p>\n"
-#"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  Вводим название продукта, массу в граммах и жмем &quot;Посчитать&quot;. &quot;Подставить&quot; откроет меню подстановки (или подставит автоматически), &quot;Окно поиска&quot; откроет окно поиска.</p>\n"
-#"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  <span style=\" font-style:italic;\">Горячие клавиши:</span></p>\n"
-#"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Ctrl+S - Открыть окно поиска</p>\n"
-#"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Ctrl+N - Добавить запись в базу данных</p>\n"
-#"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Ctrl+W - Редактировать запись в базе данных</p>\n"
-#"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Ctrl+M - Открыть окно с продвинутым калькулятором. Возможность сохранения в файл</p>\n"
-#"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Ctrl+Q - Выход</p>\n"
-#"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    F1     - Эта справка</p>\n"
-#"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Tab    - Переключение по объектам</p>\n"
-#"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Enter (в строке поиска) - откроет меню подстановки</p>\n"
-#"<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n"
-#"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" text-decoration: underline;\">Окно поиска:</span></p>\n"
-#"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  Вводим что-нибудь. Что-нибудь получим в ответ.</p>\n"
-#"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  <span style=\" font-style:italic;\">Горячие клавиши:</span></p>\n"
-#"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Esc    - закрыть окно</p>\n"
-#"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Tab    - Переключение по объектам</p>\n"
-#"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Enter (в строке поиска) - аналогично нажатию на кнопку &quot;Искать&quot;</p>\n"
-#"<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n"
-#"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" text-decoration: underline;\">Добавление записи в базу данных:</span></p>\n"
-#"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  Запись в базу данных. Оставлять числовые поля пустыми не возбраняется.</p>\n"
-#"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  <span style=\" font-style:italic;\">Горячие клавиши:</span></p>\n"
-#"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Esc    - закрыть окно</p>\n"
-#"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Tab    - Переключение по объектам</p>\n"
-#"<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n"
-#"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" text-decoration: underline;\">Редактирование записи в базе данных:</span></p>\n"
-#"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  Редактирование базы данных. Имя изменить нельзя. Оставлять числовые поля пустыми не возбраняется. &quot;Подставить&quot; откроет меню подстановки (или подставит автоматически), &quot;Окно поиска&quot; откроет окно поиска, &quot;Удалить&quot; - удалить запись из базы данных.</p>\n"
-#"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  <span style=\" font-style:italic;\">Горячие клавиши:</span></p>\n"
-#"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Esc    - закрыть окно</p>\n"
-#"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Tab    - Переключение по объектам</p>\n"
-#"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Enter (в строке поиска) - откроет меню подстановки</p>\n"
-#"<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n"
-#"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" text-decoration: underline;\">Создать меню:</span></p>\n"
-#"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  Можно посчитать несколько продуктов. И сохранить их в файл (&quot;Сохранить в файл&quot;). &quot;Подставить&quot; откроет меню подстановки (или подставит автоматически), &quot;Окно поиска&quot; откроет окно поиска, &quot;Искать&quot; ищет искомое в базе данных и обновляет числа, &quot;Добавить&quot; - добавляет  продукт и его массу в общий список.</p>\n"
-#"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  <span style=\" font-style:italic;\">Горячие клавиши:</span></p>\n"
-#"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Esc    - закрыть окно</p>\n"
-#"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Tab    - Переключение по объектам</p>\n"
-#"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Enter (в строке поиска) - откроет меню подстановки</p>\n"
-#"<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n"
-#"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" text-decoration: underline;\">Выбрать базу данных:</span></p>\n"
-#"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  Выбирает базу данных и пишет в файл настроек.</p>\n"
-#"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  Г<span style=\" font-style:italic;\">орячие клавиши:</span></p>\n"
-#"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Esc    - закрыть окно</p>\n"
-#"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Tab    - Переключение по объектам</p>\n"
-#"<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n"
-#"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" text-decoration: underline;\">Скопировать базу данных:</span></p>\n"
-#"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  Копирует текущую базу данных.</p>\n"
-#"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  <span style=\" font-style:italic;\">Горячие клавиши:</span></p>\n"
-#"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Esc    - закрыть окно</p>\n"
-#"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Tab    - Переключение по объектам</p>\n"
-#"<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n"
-#"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" text-decoration: underline;\">Выбрать язык:</span></p>\n"
-#"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  Выбор языка.</p>\n"
-#"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  <span style=\" font-style:italic;\">Горячие клавиши:</span></p>\n"
-#"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Esc    - закрыть окно</p>\n"
-#"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Tab    - Переключение по объектам</p>\n"
-#"<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n"
-#"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" text-decoration: underline;\">Помощь:</span></p>\n"
-#"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  Эта справка.</p>\n"
-#"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  <span style=\" font-style:italic;\">Горячие клавиши:</span></p>\n"
-#"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Esc    - закрыть окно</p>\n"
-#"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Tab    - Переключение по объектам</p>\n"
-#"<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n"
-#"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" text-decoration: underline;\">О программе:</span></p>\n"
-#"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  Небольшое окно &quot;About&quot;.</p>\n"
-#"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  <span style=\" font-style:italic;\">Горячие клавиши:</span></p>\n"
-#"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Esc    - закрыть окно</p>\n"
-#"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Tab    - Переключение по объектам</p>\n"
-#"<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n"
-#"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" text-decoration: underline;\">Окно подстановки:</span></p>\n"
-#"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  Подставляет выбранную позицию в строку поиска. Навигация как мышкой, так и стрелочками.</p>\n"
-#"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  <span style=\" font-style:italic;\">Горячие клавиши:</span></p>\n"
-#"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    DoubleClick, Enter - выбор позиции</p>\n"
-#"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Esc    - закрыть окно</p>\n"
-#"<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n"
-#"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" text-decoration: underline;\">Ошибка:</span></p>\n"
-#"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  Мифическое окно. У хороших пользователей его не бывает.</p>\n"
-#"<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n"
-#"<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n"
-#"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:600;\">О базе данных</span></p>\n"
-#"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Существует две базы данных, сделанных в полуавтоматическом режиме - одна на английском, другая на русском. Остальное сами. Я бы не советовал вписывать ручками - лучше пользоваться интерфейсом программы. Однако, на всякий случай замечу, что в базе данных строки содержатся в следующем виде:</p>\n"
-#"<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n"
-#"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  наименование_продукта;;белки;;жиры;;углеводы;;калорийность;;гликемический_индекс</p>\n"
-#"<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n"
-#"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Все числа хранятся в формате float (то есть что-то вроде 1.23 или 0.0). Названия лучше вводить нижним регистром, пробелы допускаются.</p>\n"
-#"<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n"
-#"<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n"
-#"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:600;\">О локализациях</span></p>\n"
-#"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Собственно, тут мне сказать нечего. Существует русский язык и английский. Сильно сомневаюсь, что будет добавлено что-то еще.</p>\n"
-#"<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n"
-#"<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n"
-#"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:600;\">Технические характеристики</span></p>\n"
-#"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" text-decoration: underline;\">Зависимости:</span></p>\n"
-#"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  Python2.7</p>\n"
-#"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  PyQt4</p>\n"
-#"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  Qt4</p>\n"
-#"<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n"
-#"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" text-decoration: underline;\">Файл настроек (food_gui.ini):</span></p>\n"
-#"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  <span style=\" font-style:italic;\">Windows</span> - рабочая директория</p>\n"
-#"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  <span style=\" font-style:italic;\">Linux</span>   - ~/.config/food_gui/</p>\n"
-#"<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n"
-#"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" text-decoration: underline;\">База данных:</span></p>\n"
-#"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  Лучше скопировать ее в рабочую директорию (Windows) или в директорию ~/.config/food_gui/ (Linux). Но, в принципе, она может быть где угодно.</p>\n"
-#"<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n"
-#"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" text-decoration: underline;\">Установка:</span></p>\n"
-#"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  <span style=\" font-style:italic;\">Linux:</span></p>\n"
-#"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    1) Убедиться, что все на месте (зависимости, наличие /usr/bin/python2.7).</p>\n"
-#"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    2) Запустить скрипт.</p>\n"
-#"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    3) Можно скопировать куда-нибудь.</p>\n"
-#"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  <span style=\" font-style:italic;\">Windows:</span></p>\n"
-#"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    1) Установить все зависимости.</p>\n"
-#"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    2a) Запустить скрипт</p>\n"
-#"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    или</p>\n"
-#"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    2b) Установить pyinstaller.</p>\n"
-#"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    3b) Запустить скрипт pyinstaller.bat.</p>\n"
-#"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    4b) Запустить полученный *.exe файл (где-то .\\food_gui\\dist\\).</p>\n"
-#"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    или</p>\n"
-#"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    1с) Взять уже готовый *.exe файл. Однако, его работа под всеми системами не гарантируется (скомпилен под Windows7-x64).</p>\n"
-#"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  <span style=\" font-style:italic;\">MacOS:</span></p>\n"
-#"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    1) Удалить MacOS.</p>\n"
-#"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    2) Поставить Linux.</p>\n"
-#"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    3) См. установку для Linux.</p>\n"
-#"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    P.S.: или подработать скрипт самостоятельно.</p>\n"
-#"<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n"
-#"<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n"
-#"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:600;\">Об ошибках, предложениях</span></p>\n"
-#"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Ошибки буду фиксить по мере возможности. Насчет предложений ничего не обещаю. По всем вопросам стучитесь:</p>\n"
-#"<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n"
-#"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  <span style=\" font-style:italic;\">e-mail: esalexeev@gmail.com</span></p>\n"
-#"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-style:italic;\">  Jabber: arcanis@jabber.ru</span></p>\n"
-#"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-style:italic;\">  ICQ: 407-398-235</span></p></body></html>", None))
+    def retranslateUi(self, Help_Window):
+        Help_Window.setWindowTitle(_translate("Help_Window", "Помощь", None))
+        self.exitbut.setText(_translate("Help_Window", "Закрыть", None))
+        self.text.setHtml(_translate("Help_Window", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:\'Droid Sans\'; font-size:10pt; font-weight:400; font-style:normal;\">\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:600;\">О проекте</span></p>\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Простая программа сделанная &quot;Just-for-fun&quot;. Может оказаться полезной, например, спортсменам, худеющим или просто следящим за своим здоровьем. Не троян и не патч Бармина. При попытке пользователя выстрелить себе в ногу, будет отчаянно сопротивляться.</p>\n"
+"<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n"
+"<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:600;\">Что она делает?</span></p>\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Первоначально она задумывалась, как довольно простая программа (такой она и осталась), в процессе реализации она обросла различными функциями. Таким образом, помимо быстрой оценки &quot;Сколько я получу калорий, если съем %food&quot;, она может считать более сложные составы, составлять меню. А также работа с базой данных и небольшие удобства для пользователя.</p>\n"
+"<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n"
+"<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:600;\">Об использовании</span></p>\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" text-decoration: underline;\">Основное окно:</span></p>\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  Вводим название продукта, массу в граммах и жмем &quot;Посчитать&quot;. &quot;Подставить&quot; откроет меню подстановки (или подставит автоматически), &quot;Окно поиска&quot; откроет окно поиска.</p>\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  <span style=\" font-style:italic;\">Горячие клавиши:</span></p>\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Ctrl+S - Открыть окно поиска</p>\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Ctrl+N - Добавить запись в базу данных</p>\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Ctrl+W - Редактировать запись в базе данных</p>\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Ctrl+M - Открыть окно с продвинутым калькулятором. Возможность сохранения в файл</p>\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Ctrl+Q - Выход</p>\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    F1     - Эта справка</p>\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Tab    - Переключение по объектам</p>\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Enter (в строке поиска) - откроет меню подстановки</p>\n"
+"<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" text-decoration: underline;\">Окно поиска:</span></p>\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  Вводим что-нибудь. Что-нибудь получим в ответ.</p>\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  <span style=\" font-style:italic;\">Горячие клавиши:</span></p>\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Esc    - закрыть окно</p>\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Tab    - Переключение по объектам</p>\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Enter (в строке поиска) - аналогично нажатию на кнопку &quot;Искать&quot;</p>\n"
+"<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" text-decoration: underline;\">Добавление записи в базу данных:</span></p>\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  Запись в базу данных. Оставлять числовые поля пустыми не возбраняется.</p>\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  <span style=\" font-style:italic;\">Горячие клавиши:</span></p>\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Esc    - закрыть окно</p>\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Tab    - Переключение по объектам</p>\n"
+"<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" text-decoration: underline;\">Редактирование записи в базе данных:</span></p>\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  Редактирование базы данных. Имя изменить нельзя. Оставлять числовые поля пустыми не возбраняется. &quot;Подставить&quot; откроет меню подстановки (или подставит автоматически), &quot;Окно поиска&quot; откроет окно поиска, &quot;Удалить&quot; - удалить запись из базы данных.</p>\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  <span style=\" font-style:italic;\">Горячие клавиши:</span></p>\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Esc    - закрыть окно</p>\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Tab    - Переключение по объектам</p>\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Enter (в строке поиска) - откроет меню подстановки</p>\n"
+"<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" text-decoration: underline;\">Создать меню:</span></p>\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  Можно посчитать несколько продуктов. И сохранить их в файл (&quot;Сохранить в файл&quot;). &quot;Подставить&quot; откроет меню подстановки (или подставит автоматически), &quot;Окно поиска&quot; откроет окно поиска, &quot;Искать&quot; ищет искомое в базе данных и обновляет числа, &quot;Добавить&quot; - добавляет  продукт и его массу в общий список.</p>\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  <span style=\" font-style:italic;\">Горячие клавиши:</span></p>\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Esc    - закрыть окно</p>\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Tab    - Переключение по объектам</p>\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Enter (в строке поиска) - откроет меню подстановки</p>\n"
+"<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" text-decoration: underline;\">Выбрать базу данных:</span></p>\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  Выбирает базу данных и пишет в файл настроек.</p>\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  Г<span style=\" font-style:italic;\">орячие клавиши:</span></p>\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Esc    - закрыть окно</p>\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Tab    - Переключение по объектам</p>\n"
+"<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" text-decoration: underline;\">Скопировать базу данных:</span></p>\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  Копирует текущую базу данных.</p>\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  <span style=\" font-style:italic;\">Горячие клавиши:</span></p>\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Esc    - закрыть окно</p>\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Tab    - Переключение по объектам</p>\n"
+"<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" text-decoration: underline;\">Выбрать язык:</span></p>\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  Выбор языка.</p>\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  <span style=\" font-style:italic;\">Горячие клавиши:</span></p>\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Esc    - закрыть окно</p>\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Tab    - Переключение по объектам</p>\n"
+"<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" text-decoration: underline;\">Помощь:</span></p>\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  Эта справка.</p>\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  <span style=\" font-style:italic;\">Горячие клавиши:</span></p>\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Esc    - закрыть окно</p>\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Tab    - Переключение по объектам</p>\n"
+"<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" text-decoration: underline;\">О программе:</span></p>\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  Небольшое окно &quot;About&quot;.</p>\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  <span style=\" font-style:italic;\">Горячие клавиши:</span></p>\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Esc    - закрыть окно</p>\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Tab    - Переключение по объектам</p>\n"
+"<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" text-decoration: underline;\">Окно подстановки:</span></p>\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  Подставляет выбранную позицию в строку поиска. Навигация как мышкой, так и стрелочками.</p>\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  <span style=\" font-style:italic;\">Горячие клавиши:</span></p>\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    DoubleClick, Enter - выбор позиции</p>\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Esc    - закрыть окно</p>\n"
+"<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" text-decoration: underline;\">Ошибка:</span></p>\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  Мифическое окно. У хороших пользователей его не бывает.</p>\n"
+"<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n"
+"<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:600;\">О базе данных</span></p>\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Существует две базы данных, сделанных в полуавтоматическом режиме - одна на английском, другая на русском. Остальное сами. Я бы не советовал вписывать ручками - лучше пользоваться интерфейсом программы. Однако, на всякий случай замечу, что в базе данных строки содержатся в следующем виде:</p>\n"
+"<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  наименование_продукта;;белки;;жиры;;углеводы;;калорийность;;гликемический_индекс</p>\n"
+"<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Все числа хранятся в формате float (то есть что-то вроде 1.23 или 0.0). Названия лучше вводить нижним регистром, пробелы допускаются.</p>\n"
+"<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n"
+"<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:600;\">О локализациях</span></p>\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Собственно, тут мне сказать нечего. Существует русский язык и английский. Сильно сомневаюсь, что будет добавлено что-то еще.</p>\n"
+"<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n"
+"<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:600;\">Технические характеристики</span></p>\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" text-decoration: underline;\">Зависимости:</span></p>\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  Python2.7</p>\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  PyQt4</p>\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  Qt4</p>\n"
+"<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" text-decoration: underline;\">Файл настроек (food_gui.ini):</span></p>\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  <span style=\" font-style:italic;\">Windows</span> - рабочая директория</p>\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  <span style=\" font-style:italic;\">Linux</span>   - ~/.config/food_gui/</p>\n"
+"<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" text-decoration: underline;\">База данных:</span></p>\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  Лучше скопировать ее в рабочую директорию (Windows) или в директорию ~/.config/food_gui/ (Linux). Но, в принципе, она может быть где угодно.</p>\n"
+"<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" text-decoration: underline;\">Установка:</span></p>\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  <span style=\" font-style:italic;\">Linux:</span></p>\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    1) Убедиться, что все на месте (зависимости, наличие /usr/bin/python2.7).</p>\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    2) Запустить скрипт.</p>\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    3) Можно скопировать куда-нибудь.</p>\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  <span style=\" font-style:italic;\">Windows:</span></p>\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    1) Установить все зависимости.</p>\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    2a) Запустить скрипт</p>\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    или</p>\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    2b) Установить pyinstaller.</p>\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    3b) Запустить скрипт pyinstaller.bat.</p>\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    4b) Запустить полученный *.exe файл (где-то .\\food_gui\\dist\\).</p>\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    или</p>\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    1с) Взять уже готовый *.exe файл. Однако, его работа под всеми системами не гарантируется (скомпилен под Windows7-x64).</p>\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  <span style=\" font-style:italic;\">MacOS:</span></p>\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    1) Удалить MacOS.</p>\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    2) Поставить Linux.</p>\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    3) См. установку для Linux.</p>\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    P.S.: или подработать скрипт самостоятельно.</p>\n"
+"<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n"
+"<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:600;\">Об ошибках, предложениях</span></p>\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Ошибки буду фиксить по мере возможности. Насчет предложений ничего не обещаю. По всем вопросам стучитесь:</p>\n"
+"<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  <span style=\" font-style:italic;\">e-mail: esalexeev@gmail.com</span></p>\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-style:italic;\">  Jabber: arcanis@jabber.ru</span></p>\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-style:italic;\">  ICQ: 407-398-235</span></p></body></html>", None))
 
 
 class Ui_Language(object):
@@ -881,12 +881,12 @@ class Ui_Language(object):
         Language.setTabOrder(self.rus_radio, self.okbut)
         Language.setTabOrder(self.okbut, self.cancelbut)
 
-    #def retranslateUi(self, Language):
-        #Language.setWindowTitle(_translate("Language", "Change language", None))
-        #self.eng_radio.setText(_translate("Language", "English", None))
-        #self.rus_radio.setText(_translate("Language", "Русский", None))
-        #self.okbut.setText(_translate("Language", "Ok", None))
-        #self.cancelbut.setText(_translate("Language", "Отмена", None))
+    def retranslateUi(self, Language):
+        Language.setWindowTitle(_translate("Language", "Change language", None))
+        self.eng_radio.setText(_translate("Language", "English", None))
+        self.rus_radio.setText(_translate("Language", "Русский", None))
+        self.okbut.setText(_translate("Language", "Ok", None))
+        self.cancelbut.setText(_translate("Language", "Отмена", None))
 
 
 class Ui_NotFound(object):
@@ -909,10 +909,10 @@ class Ui_NotFound(object):
         QtCore.QObject.connect(self.okbut, QtCore.SIGNAL(_fromUtf8("clicked()")), NotFound.close)
         QtCore.QMetaObject.connectSlotsByName(NotFound)
 
-    #def retranslateUi(self, NotFound):
-        #NotFound.setWindowTitle(_translate("NotFound", "Ошибка!", None))
-        #self.label.setText(_translate("NotFound", "<html><head/><body><p align=\"justify\">Продукт %s не найден в базе данных</p></body></html>", None))
-        #self.okbut.setText(_translate("NotFound", "Ok", None))
+    def retranslateUi(self, NotFound):
+        NotFound.setWindowTitle(_translate("NotFound", "Ошибка!", None))
+        self.label.setText(_translate("NotFound", "<html><head/><body><p align=\"justify\">Продукт %s не найден в базе данных</p></body></html>", None))
+        self.okbut.setText(_translate("NotFound", "Ok", None))
 
 
 class Ui_Search_Window(object):
@@ -945,10 +945,10 @@ class Ui_Search_Window(object):
         Search_Window.setTabOrder(self.searchbut, self.search_box)
         Search_Window.setTabOrder(self.search_box, self.exitbut)
 
-    #def retranslateUi(self, Search_Window):
-        #Search_Window.setWindowTitle(_translate("Search_Window", "Поиск", None))
-        #self.exitbut.setText(_translate("Search_Window", "Закрыть", None))
-        #self.searchbut.setText(_translate("Search_Window", "Искать", None))
+    def retranslateUi(self, Search_Window):
+        Search_Window.setWindowTitle(_translate("Search_Window", "Поиск", None))
+        self.exitbut.setText(_translate("Search_Window", "Закрыть", None))
+        self.searchbut.setText(_translate("Search_Window", "Искать", None))
 
 
 
@@ -968,7 +968,7 @@ class AboutWindow(QtGui.QMainWindow):
 <html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">
 p, li { white-space: pre-wrap; }
 </style></head><body style=\" font-family:\'Droid Sans\'; font-size:10pt; font-weight:400; font-style:normal;\">
-<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Food 1.1.0</p>
+<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">food_gui 1.1.1</p>
 <p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Лицензия: GPL</p>
 <p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>
 <p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Простенькая программа-калькулятор на питоне, подсчитывающая БЖУ, калорийность и гликемический индекс употребляемых продуктов на основании базы данных.</p>
@@ -984,7 +984,7 @@ p, li { white-space: pre-wrap; }
 <html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">
 p, li { white-space: pre-wrap; }
 </style></head><body style=\" font-family:\'Droid Sans\'; font-size:10pt; font-weight:400; font-style:normal;\">
-<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Food 1.1.0</p>
+<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">food_gui 1.1.1</p>
 <p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">License: GPL</p>
 <p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>
 <p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Simple program-calculator used self database and written on Python, that calculates proteins, fats, carbohydrates, food energy and glycemic index eaten food.</p>
@@ -1067,7 +1067,16 @@ class AddWindow(QtGui.QMainWindow):
                 not_found.show()
                 return
             else:
-                prot = self.ui.prot_line.text().toFloat()[0]
+                if (self.ui.prot_line.text().toFloat()[0] < 0):
+                    if (lang == 'RUS'):
+                        inv_subs = u"<html><head/><body><p align=\"center\">\""+self.ui.prot_line.text()+"\" отрицательное</p></body></html>"
+                    else:
+                        inv_subs = u"<html><head/><body><p align=\"center\">\""+self.ui.prot_line.text()+"\" is negative</p></body></html>"
+                    not_found = NotFound(parent=self, text=inv_subs)
+                    not_found.show()
+                    return
+                else:
+                    prot = self.ui.prot_line.text().toFloat()[0]
         
         if (len(self.ui.lip_line.text()) == 0):
             lip = 0.0
@@ -1081,7 +1090,16 @@ class AddWindow(QtGui.QMainWindow):
                 not_found.show()
                 return
             else:
-                lip = self.ui.lip_line.text().toFloat()[0]
+                if (self.ui.lip_line.text().toFloat()[0] < 0):
+                    if (lang == 'RUS'):
+                        inv_subs = u"<html><head/><body><p align=\"center\">\""+self.ui.lip_line.text()+"\" отрицательное</p></body></html>"
+                    else:
+                        inv_subs = u"<html><head/><body><p align=\"center\">\""+self.ui.lip_line.text()+"\" is negative</p></body></html>"
+                    not_found = NotFound(parent=self, text=inv_subs)
+                    not_found.show()
+                    return
+                else:
+                    lip = self.ui.lip_line.text().toFloat()[0]
         
         if (len(self.ui.carb_line.text()) == 0):
             carb = 0.0
@@ -1095,7 +1113,16 @@ class AddWindow(QtGui.QMainWindow):
                 not_found.show()
                 return
             else:
-                carb = self.ui.carb_line.text().toFloat()[0]
+                if (self.ui.carb_line.text().toFloat()[0] < 0):
+                    if (lang == 'RUS'):
+                        inv_subs = u"<html><head/><body><p align=\"center\">\""+self.ui.carb_line.text()+"\" отрицательное</p></body></html>"
+                    else:
+                        inv_subs = u"<html><head/><body><p align=\"center\">\""+self.ui.carb_line.text()+"\" is negative</p></body></html>"
+                    not_found = NotFound(parent=self, text=inv_subs)
+                    not_found.show()
+                    return
+                else:
+                    carb = self.ui.carb_line.text().toFloat()[0]
         
         if (len(self.ui.ccal_line.text()) == 0):
             ccal = 0.0
@@ -1109,7 +1136,16 @@ class AddWindow(QtGui.QMainWindow):
                 not_found.show()
                 return
             else:
-                ccal = self.ui.ccal_line.text().toFloat()[0]
+                if (self.ui.ccal_line.text().toFloat()[0] < 0):
+                    if (lang == 'RUS'):
+                        inv_subs = u"<html><head/><body><p align=\"center\">\""+self.ui.ccal_line.text()+"\" отрицательное</p></body></html>"
+                    else:
+                        inv_subs = u"<html><head/><body><p align=\"center\">\""+self.ui.ccal_line.text()+"\" is negative</p></body></html>"
+                    not_found = NotFound(parent=self, text=inv_subs)
+                    not_found.show()
+                    return
+                else:
+                    ccal = self.ui.ccal_line.text().toFloat()[0]
         
         if (len(self.ui.glyc_line.text()) == 0):
             glyc = 0.0
@@ -1123,7 +1159,16 @@ class AddWindow(QtGui.QMainWindow):
                 not_found.show()
                 return
             else:
-                glyc = self.ui.glyc_line.text().toFloat()[0]
+                if (self.ui.glyc_line.text().toFloat()[0] < 0):
+                    if (lang == 'RUS'):
+                        inv_subs = u"<html><head/><body><p align=\"center\">\""+self.ui.glyc_line.text()+"\" отрицательное</p></body></html>"
+                    else:
+                        inv_subs = u"<html><head/><body><p align=\"center\">\""+self.ui.glyc_line.text()+"\" is negative</p></body></html>"
+                    not_found = NotFound(parent=self, text=inv_subs)
+                    not_found.show()
+                    return
+                else:
+                    glyc = self.ui.glyc_line.text().toFloat()[0]
         
         dbold = db+".bckp"
         os.rename(db,  dbold)
@@ -1863,7 +1908,16 @@ class EditWindow(QtGui.QMainWindow):
                 not_found.show()
                 return
             else:
-                prot = self.ui.prot_line.text().toFloat()[0]
+                if (self.ui.prot_line.text().toFloat()[0] < 0):
+                    if (lang == 'RUS'):
+                        inv_subs = u"<html><head/><body><p align=\"center\">\""+self.ui.prot_line.text()+"\" отрицательное</p></body></html>"
+                    else:
+                        inv_subs = u"<html><head/><body><p align=\"center\">\""+self.ui.prot_line.text()+"\" is negative</p></body></html>"
+                    not_found = NotFound(parent=self, text=inv_subs)
+                    not_found.show()
+                    return
+                else:
+                    prot = self.ui.prot_line.text().toFloat()[0]
         
         if (len(self.ui.lip_line.text()) == 0):
             lip = 0.0
@@ -1877,7 +1931,16 @@ class EditWindow(QtGui.QMainWindow):
                 not_found.show()
                 return
             else:
-                lip = self.ui.lip_line.text().toFloat()[0]
+                if (self.ui.lip_line.text().toFloat()[0] < 0):
+                    if (lang == 'RUS'):
+                        inv_subs = u"<html><head/><body><p align=\"center\">\""+self.ui.lip_line.text()+"\" отрицательное</p></body></html>"
+                    else:
+                        inv_subs = u"<html><head/><body><p align=\"center\">\""+self.ui.lip_line.text()+"\" is negative</p></body></html>"
+                    not_found = NotFound(parent=self, text=inv_subs)
+                    not_found.show()
+                    return
+                else:
+                    lip = self.ui.lip_line.text().toFloat()[0]
         
         if (len(self.ui.carb_line.text()) == 0):
             carb = 0.0
@@ -1891,7 +1954,16 @@ class EditWindow(QtGui.QMainWindow):
                 not_found.show()
                 return
             else:
-                carb = self.ui.carb_line.text().toFloat()[0]
+                if (self.ui.carb_line.text().toFloat()[0] < 0):
+                    if (lang == 'RUS'):
+                        inv_subs = u"<html><head/><body><p align=\"center\">\""+self.ui.carb_line.text()+"\" отрицательное</p></body></html>"
+                    else:
+                        inv_subs = u"<html><head/><body><p align=\"center\">\""+self.ui.carb_line.text()+"\" is negative</p></body></html>"
+                    not_found = NotFound(parent=self, text=inv_subs)
+                    not_found.show()
+                    return
+                else:
+                    carb = self.ui.carb_line.text().toFloat()[0]
         
         if (len(self.ui.ccal_line.text()) == 0):
             ccal = 0.0
@@ -1905,7 +1977,16 @@ class EditWindow(QtGui.QMainWindow):
                 not_found.show()
                 return
             else:
-                ccal = self.ui.ccal_line.text().toFloat()[0]
+                if (self.ui.ccal_line.text().toFloat()[0] < 0):
+                    if (lang == 'RUS'):
+                        inv_subs = u"<html><head/><body><p align=\"center\">\""+self.ui.ccal_line.text()+"\" отрицательное</p></body></html>"
+                    else:
+                        inv_subs = u"<html><head/><body><p align=\"center\">\""+self.ui.ccal_line.text()+"\" is negative</p></body></html>"
+                    not_found = NotFound(parent=self, text=inv_subs)
+                    not_found.show()
+                    return
+                else:
+                    ccal = self.ui.ccal_line.text().toFloat()[0]
         
         if (len(self.ui.glyc_line.text()) == 0):
             glyc = 0.0
@@ -1919,7 +2000,16 @@ class EditWindow(QtGui.QMainWindow):
                 not_found.show()
                 return
             else:
-                glyc = self.ui.glyc_line.text().toFloat()[0]
+                if (self.ui.glyc_line.text().toFloat()[0] < 0):
+                    if (lang == 'RUS'):
+                        inv_subs = u"<html><head/><body><p align=\"center\">\""+self.ui.glyc_line.text()+"\" отрицательное</p></body></html>"
+                    else:
+                        inv_subs = u"<html><head/><body><p align=\"center\">\""+self.ui.glyc_line.text()+"\" is negative</p></body></html>"
+                    not_found = NotFound(parent=self, text=inv_subs)
+                    not_found.show()
+                    return
+                else:
+                    glyc = self.ui.glyc_line.text().toFloat()[0]
         
         dbold = db + ".bckp"
         os.rename(db,  dbold)
@@ -1970,146 +2060,148 @@ class Help(QtGui.QMainWindow):
 <html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">
 p, li { white-space: pre-wrap; }
 </style></head><body style=\" font-family:\'Droid Sans\'; font-size:10pt; font-weight:400; font-style:normal;\">
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:600;\">О проекте</span></p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Простая программа сделанная &quot;Just-for-fun&quot;. Может оказаться полезной, например, спортсменам, худеющим или просто следящим за своим здоровьем. Не троян и не патч Бармина. При попытке пользователя выстрелить себе в ногу, будет отчаянно сопротивляться.</p>
-<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>
-<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:600;\">Что она делает?</span></p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Первоначально она задумывалась, как довольно простая программа (такой она и осталась), в процессе реализации она обросла различными функциями. Таким образом, помимо быстрой оценки &quot;Сколько я получу калорий, если съем %food&quot;, она может считать более сложные составы, составлять меню. А также работа с базой данных и небольшие удобства для пользователя.</p>
-<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>
-<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:600;\">Об использовании</span></p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" text-decoration: underline;\">Основное окно:</span></p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  Вводим название продукта, массу в граммах и жмем &quot;Посчитать&quot;. &quot;Подставить&quot; откроет меню подстановки (или подставит автоматически), &quot;Окно поиска&quot; откроет окно поиска.</p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  <span style=\" font-style:italic;\">Горячие клавиши:</span></p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Ctrl+S - Открыть окно поиска</p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Ctrl+N - Добавить запись в базу данных</p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Ctrl+W - Редактировать запись в базе данных</p>
-<p align=\"left\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Ctrl+M - Открыть окно с продвинутым калькулятором. Возможность сохранения в файл</p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Ctrl+Q - Выход</p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    F1     - Эта справка</p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Tab    - Переключение по объектам</p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Enter (в строке поиска) - откроет меню подстановки</p>
-<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" text-decoration: underline;\">Окно поиска:</span></p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  Вводим что-нибудь. Что-нибудь получим в ответ.</p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  <span style=\" font-style:italic;\">Горячие клавиши:</span></p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Esc    - закрыть окно</p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Tab    - Переключение по объектам</p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Enter (в строке поиска) - аналогично нажатию на кнопку &quot;Искать&quot;</p>
-<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" text-decoration: underline;\">Добавление записи в базу данных:</span></p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  Запись в базу данных. Оставлять числовые поля пустыми не возбраняется.</p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  <span style=\" font-style:italic;\">Горячие клавиши:</span></p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Esc    - закрыть окно</p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Tab    - Переключение по объектам</p>
-<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" text-decoration: underline;\">Редактирование записи в базе данных:</span></p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  Редактирование базы данных. Имя изменить нельзя. Оставлять числовые поля пустыми не возбраняется. &quot;Подставить&quot; откроет меню подстановки (или подставит автоматически), &quot;Окно поиска&quot; откроет окно поиска, &quot;Удалить&quot; - удалить запись из базы данных.</p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  <span style=\" font-style:italic;\">Горячие клавиши:</span></p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Esc    - закрыть окно</p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Tab    - Переключение по объектам</p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Enter (в строке поиска) - откроет меню подстановки</p>
-<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" text-decoration: underline;\">Создать меню:</span></p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  Можно посчитать несколько продуктов. И сохранить их в файл (&quot;Сохранить в файл&quot;). &quot;Подставить&quot; откроет меню подстановки (или подставит автоматически), &quot;Окно поиска&quot; откроет окно поиска, &quot;Искать&quot; ищет искомое в базе данных и обновляет числа, &quot;Добавить&quot; - добавляет  продукт и его массу в общий список.</p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  <span style=\" font-style:italic;\">Горячие клавиши:</span></p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Esc    - закрыть окно</p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Tab    - Переключение по объектам</p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Enter (в строке поиска) - откроет меню подстановки</p>
-<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" text-decoration: underline;\">Выбрать базу данных:</span></p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  Выбирает базу данных и пишет в файл настроек.</p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  Г<span style=\" font-style:italic;\">орячие клавиши:</span></p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Esc    - закрыть окно</p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Tab    - Переключение по объектам</p>
-<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" text-decoration: underline;\">Скопировать базу данных:</span></p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  Копирует текущую базу данных.</p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  <span style=\" font-style:italic;\">Горячие клавиши:</span></p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Esc    - закрыть окно</p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Tab    - Переключение по объектам</p>
-<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" text-decoration: underline;\">Выбрать язык:</span></p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  Выбор языка.</p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  <span style=\" font-style:italic;\">Горячие клавиши:</span></p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Esc    - закрыть окно</p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Tab    - Переключение по объектам</p>
-<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" text-decoration: underline;\">Помощь:</span></p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  Эта справка.</p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  <span style=\" font-style:italic;\">Горячие клавиши:</span></p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Esc    - закрыть окно</p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Tab    - Переключение по объектам</p>
-<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" text-decoration: underline;\">О программе:</span></p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  Небольшое окно &quot;About&quot;.</p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  <span style=\" font-style:italic;\">Горячие клавиши:</span></p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Esc    - закрыть окно</p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Tab    - Переключение по объектам</p>
-<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" text-decoration: underline;\">Окно подстановки:</span></p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  Подставляет выбранную позицию в строку поиска. Навигация как мышкой, так и стрелочками.</p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  <span style=\" font-style:italic;\">Горячие клавиши:</span></p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    DoubleClick, Enter - выбор позиции</p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Esc    - закрыть окно</p>
-<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" text-decoration: underline;\">Ошибка:</span></p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  Мифическое окно. У хороших пользователей его не бывает.</p>
-<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>
-<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:600;\">О базе данных</span></p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Существует две базы данных, сделанных в полуавтоматическом режиме - одна на английском, другая на русском. Остальное сами. Я бы не советовал вписывать ручками - лучше пользоваться интерфейсом программы. Однако, на всякий случай замечу, что в базе данных строки содержатся в следующем виде:</p>
-<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  наименование_продукта;;белки;;жиры;;углеводы;;калорийность;;гликемический_индекс</p>
-<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Все числа хранятся в формате float (то есть что-то вроде 1.23 или 0.0). Названия лучше вводить нижним регистром, пробелы допускаются.</p>
-<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>
-<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:600;\">О локализациях</span></p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Собственно, тут мне сказать нечего. Существует русский язык и английский. Сильно сомневаюсь, что будет добавлено что-то еще.</p>
-<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>
-<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:600;\">Технические характеристики</span></p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" text-decoration: underline;\">Зависимости:</span></p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  Python2.7</p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  PyQt4</p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  Qt4</p>
-<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" text-decoration: underline;\">Файл настроек (food_gui.ini):</span></p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  <span style=\" font-style:italic;\">Windows</span> - рабочая директория</p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  <span style=\" font-style:italic;\">Linux</span>   - ~/.config/food_gui/</p>
-<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" text-decoration: underline;\">База данных:</span></p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  Лучше скопировать ее в рабочую директорию (Windows) или в директорию ~/.config/food_gui/ (Linux). Но, в принципе, она может быть где угодно.</p>
-<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" text-decoration: underline;\">Установка:</span></p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  <span style=\" font-style:italic;\">Linux:</span></p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    1) Убедиться, что все на месте (зависимости, наличие /usr/bin/python2.7).</p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    2) Запустить скрипт.</p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    3) Можно скопировать куда-нибудь.</p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  <span style=\" font-style:italic;\">Windows:</span></p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    1) Установить все зависимости.</p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    2a) Запустить скрипт</p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    или</p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    2b) Установить pyinstaller.</p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    3b) Запустить скрипт pyinstaller.bat.</p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    4b) Запустить полученный *.exe файл (где-то .\\food_gui\\dist\\).</p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    или</p>
-<p align=\"left\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    1с) Взять уже готовый *.exe файл. Однако, его работа под всеми системами не гарантируется (скомпилен под Windows7-x64).</p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  <span style=\" font-style:italic;\">MacOS:</span></p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    1) Удалить MacOS.</p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    2) Поставить Linux.</p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    3) См. установку для Linux.</p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    P.S.: или подработать скрипт самостоятельно.</p>
-<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>
-<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:600;\">Об ошибках, предложениях</span></p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Ошибки буду фиксить по мере возможности. Насчет предложений ничего не обещаю. По всем вопросам стучитесь:</p>
-<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  <span style=\" font-style:italic;\">e-mail: esalexeev@gmail.com</span></p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-style:italic;\">  Jabber: arcanis@jabber.ru</span></p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-style:italic;\">  ICQ: 407-398-235</span></p></body></html>""")
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:600;\">О проекте</span></p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Простая программа сделанная &quot;Just-for-fun&quot;. Может оказаться полезной, например, спортсменам, худеющим или просто следящим за своим здоровьем. Не троян и не патч Бармина. При попытке пользователя выстрелить себе в ногу, будет отчаянно сопротивляться.</p>
+<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>
+<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:600;\">Что она делает?</span></p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Первоначально она задумывалась, как довольно простая программа (такой она и осталась), в процессе реализации она обросла различными функциями. Таким образом, помимо быстрой оценки &quot;Сколько я получу калорий, если съем %food&quot;, она может считать более сложные составы, составлять меню. А также работа с базой данных и небольшие удобства для пользователя.</p>
+<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>
+<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:600;\">Об использовании</span></p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" text-decoration: underline;\">Основное окно:</span></p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  Вводим название продукта, массу в граммах и жмем &quot;Посчитать&quot;. &quot;Подставить&quot; откроет меню подстановки (или подставит автоматически), &quot;Окно поиска&quot; откроет окно поиска.</p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  <span style=\" font-style:italic;\">Горячие клавиши:</span></p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Ctrl+S - Открыть окно поиска</p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Ctrl+N - Добавить запись в базу данных</p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Ctrl+W - Редактировать запись в базе данных</p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Ctrl+M - Открыть окно с продвинутым калькулятором. Возможность сохранения в файл</p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Ctrl+Q - Выход</p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    F1     - Эта справка</p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Tab    - Переключение по объектам</p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Enter (в строке поиска) - откроет меню подстановки</p>
+<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" text-decoration: underline;\">Окно поиска:</span></p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  Вводим что-нибудь. Что-нибудь получим в ответ.</p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  <span style=\" font-style:italic;\">Горячие клавиши:</span></p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Esc    - закрыть окно</p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Tab    - Переключение по объектам</p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Enter (в строке поиска) - аналогично нажатию на кнопку &quot;Искать&quot;</p>
+<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" text-decoration: underline;\">Добавление записи в базу данных:</span></p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  Запись в базу данных. Оставлять числовые поля пустыми не возбраняется.</p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  <span style=\" font-style:italic;\">Горячие клавиши:</span></p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Esc    - закрыть окно</p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Tab    - Переключение по объектам</p>
+<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" text-decoration: underline;\">Редактирование записи в базе данных:</span></p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  Редактирование базы данных. Имя изменить нельзя. Оставлять числовые поля пустыми не возбраняется. &quot;Подставить&quot; откроет меню подстановки (или подставит автоматически), &quot;Окно поиска&quot; откроет окно поиска, &quot;Удалить&quot; - удалить запись из базы данных.</p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  <span style=\" font-style:italic;\">Горячие клавиши:</span></p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Esc    - закрыть окно</p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Tab    - Переключение по объектам</p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Enter (в строке поиска) - откроет меню подстановки</p>
+<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" text-decoration: underline;\">Создать меню:</span></p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  Можно посчитать несколько продуктов. И сохранить их в файл (&quot;Сохранить в файл&quot;). &quot;Подставить&quot; откроет меню подстановки (или подставит автоматически), &quot;Окно поиска&quot; откроет окно поиска, &quot;Искать&quot; ищет искомое в базе данных и обновляет числа, &quot;Добавить&quot; - добавляет  продукт и его массу в общий список.</p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  <span style=\" font-style:italic;\">Горячие клавиши:</span></p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Esc    - закрыть окно</p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Tab    - Переключение по объектам</p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Enter (в строке поиска) - откроет меню подстановки</p>
+<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" text-decoration: underline;\">Выбрать базу данных:</span></p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  Выбирает базу данных и пишет в файл настроек.</p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  Г<span style=\" font-style:italic;\">орячие клавиши:</span></p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Esc    - закрыть окно</p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Tab    - Переключение по объектам</p>
+<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" text-decoration: underline;\">Скопировать базу данных:</span></p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  Копирует текущую базу данных.</p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  <span style=\" font-style:italic;\">Горячие клавиши:</span></p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Esc    - закрыть окно</p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Tab    - Переключение по объектам</p>
+<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" text-decoration: underline;\">Выбрать язык:</span></p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  Выбор языка.</p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  <span style=\" font-style:italic;\">Горячие клавиши:</span></p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Esc    - закрыть окно</p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Tab    - Переключение по объектам</p>
+<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" text-decoration: underline;\">Помощь:</span></p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  Эта справка.</p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  <span style=\" font-style:italic;\">Горячие клавиши:</span></p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Esc    - закрыть окно</p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Tab    - Переключение по объектам</p>
+<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" text-decoration: underline;\">О программе:</span></p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  Небольшое окно &quot;About&quot;.</p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  <span style=\" font-style:italic;\">Горячие клавиши:</span></p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Esc    - закрыть окно</p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Tab    - Переключение по объектам</p>
+<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" text-decoration: underline;\">Окно подстановки:</span></p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  Подставляет выбранную позицию в строку поиска. Навигация как мышкой, так и стрелочками.</p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  <span style=\" font-style:italic;\">Горячие клавиши:</span></p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    DoubleClick, Enter - выбор позиции</p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Esc    - закрыть окно</p>
+<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" text-decoration: underline;\">Ошибка:</span></p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  Мифическое окно. У хороших пользователей его не бывает.</p>
+<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>
+<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:600;\">О базе данных</span></p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Существует две базы данных, сделанных в полуавтоматическом режиме - одна на английском (правда, с машинным переводом), другая на русском. Остальное сами. Я бы не советовал вписывать ручками - лучше пользоваться интерфейсом программы. Однако, на всякий случай замечу, что в базе данных строки содержатся в следующем виде:</p>
+<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  наименование_продукта;;белки;;жиры;;углеводы;;калорийность;;гликемический_индекс</p>
+<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Все числа хранятся в формате float (то есть что-то вроде 1.23 или 0.0). Названия лучше вводить нижним регистром, пробелы допускаются. Кстати, в оригинальной базе данных отсутствуют данные по гликемическому индексу - вместо него везде 0.0. Все числовые значения заносятся из расчета на 100 весовых единиц.</p>
+<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>
+<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:600;\">О локализациях</span></p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Собственно, тут мне сказать нечего. Существует русский язык и английский. Сильно сомневаюсь, что будет добавлено что-то еще.</p>
+<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>
+<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:600;\">Технические характеристики</span></p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" text-decoration: underline;\">Зависимости:</span></p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  Python2.7</p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  PyQt4</p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  Qt4</p>
+<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" text-decoration: underline;\">Файл настроек (food_gui.ini):</span></p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  <span style=\" font-style:italic;\">Windows</span> - рабочая директория</p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  <span style=\" font-style:italic;\">Linux</span>   - ~/.config/food_gui/</p>
+<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" text-decoration: underline;\">База данных:</span></p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  Лучше скопировать ее в рабочую директорию (Windows) или в директорию ~/.config/food_gui/ (Linux). Но, в принципе, она может быть где угодно.</p>
+<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" text-decoration: underline;\">Установка:</span></p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  <span style=\" font-style:italic;\">Linux:</span></p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    1) Убедиться, что все на месте (зависимости, наличие /usr/bin/python2.7).</p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    2) Запустить скрипт.</p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    3) Можно скопировать куда-нибудь.</p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    или</p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    1b) Скачать готовый бинарный файл.</p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  <span style=\" font-style:italic;\">Windows:</span></p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    1) Установить все зависимости.</p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    2a) Запустить скрипт</p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    или</p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    2b) Установить pyinstaller.</p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    3b) Запустить скрипт pyinstaller.bat.</p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    4b) Запустить полученный *.exe файл (где-то .\\food_gui\\dist\\).</p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    или</p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    1с) Взять уже готовый *.exe файл. Однако, его работа под всеми системами не гарантируется (скомпилен под Windows7-x64).</p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  <span style=\" font-style:italic;\">MacOS:</span></p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    1) Удалить MacOS.</p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    2) Поставить Linux.</p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    3) См. установку для Linux.</p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    P.S.: или подработать скрипт самостоятельно.</p>
+<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>
+<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:600;\">Об ошибках, предложениях</span></p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Ошибки буду фиксить по мере возможности. Насчет предложений ничего не обещаю. По всем вопросам стучитесь:</p>
+<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  <span style=\" font-style:italic;\">e-mail: esalexeev@gmail.com</span></p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-style:italic;\">  Jabber: arcanis@jabber.ru</span></p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-style:italic;\">  ICQ: 407-398-235</span></p></body></html>""")
         else:
             self.setWindowTitle(u"Help")
             self.ui.exitbut.setText(u"Close")
@@ -2117,144 +2209,146 @@ p, li { white-space: pre-wrap; }
 <html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">
 p, li { white-space: pre-wrap; }
 </style></head><body style=\" font-family:\'Droid Sans\'; font-size:10pt; font-weight:400; font-style:normal;\">
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:600;\">About</span></p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">A simple program that made &quot;Just-for-fun&quot;. It may be useful, for example, athletes, losing weight, or just monitoring their health. It isn\'t Trojan or Barmin\'s patch. When a user attempts to shoot in the leg yourself , it will be resist.</p>
-<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>
-<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:600;\">What does it do?</span></p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">What initially began as a simple program (so it still is) it has acquired different functions. Thus, in addition to rapid assessment &quot;How many calories do I get when I eat %food&quot;, it can do more complex calculations or create menu. As well as working with a database and a small comfort for a user.</p>
-<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>
-<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:600;\">How to use</span></p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" text-decoration: underline;\">Main window:</span></p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  Enter name of food, weight in grams and click on &quot;Calculate&quot;. Click on &quot;Autocomlete&quot; will open autocomplete menu (or substitute automatically), click on &quot;Search window&quot; will open search window.</p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  <span style=\" font-style:italic;\">Hotkeys:</span></p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Ctrl+S - Open search  window</p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Ctrl+N - Add item to the database</p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Ctrl+W - Edit item in the database</p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Ctrl+M - Open window with advanced calculator. It can save calculations to file.</p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    F1     - This help</p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Tab    - Switch on objects</p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Enter (in the search line) - Open autocomplete menu</p>
-<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" text-decoration: underline;\">Search window:</span></p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  Introduce something. Get something in return.</p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  <span style=\" font-style:italic;\">Hotkeys:</span></p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Esc    - Close</p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Tab    - Switch on objects</p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Enter (in the search line) - Same as click on &quot;Search&quot;</p>
-<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" text-decoration: underline;\">Add item to the database:</span></p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  Add item to the database. You may leave numeric fields blank.</p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  <span style=\" font-style:italic;\">Hotkeys:</span></p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Esc    - Close</p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Tab    - Switch on objects</p>
-<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" text-decoration: underline;\">Edit item in the database:</span></p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  Edit database. Name can not be changed. You may leave numeric fields blank. Click on &quot;Autocomlete&quot; will open autocomplete menu (or substitute automatically), click on &quot;Search window&quot; will open search window, click on &quot;Remove&quot; will remove item from the database.</p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  <span style=\" font-style:italic;\">Hotkeys:</span></p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Esc    - Close</p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Tab    - Switch on objects</p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Enter (in the search line) - Open autocomplete menu</p>
-<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" text-decoration: underline;\">Create menu:</span></p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  You can do calculations with more number of items. And save it to file (&quot;Save as ...&quot;). Click on &quot;Autocomlete&quot; will open autocomplete menu (or substitute automatically), click on &quot;Search window&quot; will open search window, click on &quot;Search&quot; will search for item in the database and will update values, click on &quot;Add&quot; will add item and its weight in the list.</p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  <span style=\" font-style:italic;\">Hotkeys:</span></p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Esc    - Close</p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Tab    - Switch on objects</p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Enter (in the search line) - Open autocomplete menu</p>
-<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" text-decoration: underline;\">Select database:</span></p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  Select database and write it to configuration file.</p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  <span style=\" font-style:italic;\">Hotkeys:</span></p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Esc    - Close</p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Tab    - Switch on objects</p>
-<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" text-decoration: underline;\">Copy database:</span></p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  Copy current database.</p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  <span style=\" font-style:italic;\">Hotkeys:</span></p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Esc    - Close</p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Tab    - Switch on objects</p>
-<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" text-decoration: underline;\">Change the language:</span></p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  You can change the language.</p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  <span style=\" font-style:italic;\">Hotkeys:</span></p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Esc    - Close</p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Tab    - Switch on objects</p>
-<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" text-decoration: underline;\">Help:</span></p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  This help.</p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  <span style=\" font-style:italic;\">Hotkeys:</span></p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Esc    - Close</p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Tab    - Switch on objects</p>
-<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" text-decoration: underline;\">About:</span></p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  A small window &quot;About&quot;</p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-style:italic;\">  Hotkeys:</span></p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Esc    - Close</p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Tab    - Switch on objects</p>
-<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" text-decoration: underline;\">Autocomplete window:</span></p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  Substitutes selected position to search line. Selection is made mouse or arrow keys.</p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-style:italic;\">  Hotkeys:</span></p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    DoubleClick, Enter - Select position</p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Esc    - Close</p>
-<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" text-decoration: underline;\">Error:</span></p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  It is mythical window. A good user doesn\'t see it.</p>
-<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>
-<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:600;\">About database</span></p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">There are two databases made ​​in semi-automatic mode. First in English and second in Russian. The rest do yourself. I recommend use program interface for adding item to the database. However, I note that the database contains the line as follow string:</p>
-<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  item_name;;proteins;;fats;;carbohydrates;;food_energy;;glycemic_index</p>
-<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">All numbers are stored as float (that is something like 1.23 or 0.0). I recommend entering item name in lower case. Space are allowed.</p>
-<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>
-<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:600;\">About localization</span></p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Actually, I have nothing to say here. There are Russian and English. I seriously doubt that anything more will be added.</p>
-<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>
-<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:600;\">Specification</span></p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" text-decoration: underline;\">Dependencies:</span></p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  Python2.7</p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  PyQt4</p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  Qt4</p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  </p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" text-decoration: underline;\">Configuration file (food_gui.ini):</span></p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  <span style=\" font-style:italic;\">Windows</span> - the working directory</p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  <span style=\" font-style:italic;\">Linux</span>   - ~/.config/food_gui/</p>
-<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" text-decoration: underline;\">Database:</span></p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  I recommend copy it to your working directory (Windows) or to ~/.config/food_gui/ (Linux). But it could be anywhere.</p>
-<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" text-decoration: underline;\">Installation:</span></p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  <span style=\" font-style:italic;\">Linux:</span></p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    1) Make sure that everything is in place (dependencies, /usr/bin/python2.7).</p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    2) Run the script.</p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    3) You can copy the script to somewhere.</p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-style:italic;\">  Windows:</span></p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    1) Install all dependencies.</p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    2a) Run the script.</p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    or</p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    2b) Install pyinstaller.</p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    3b) Run the script &quot;pyinstaller.bat&quot;.</p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    4b) Run *.exe file (somewhere .\\food_gui\\dist\\).</p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    or</p>
-<p align=\"right\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    1c) Get *.exe file. However its work for all systems isn\'t guatanteed (compiled under Windows7-x64).</p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-style:italic;\">  MacOS:</span></p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    1) Remove MacOS.</p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    2) Install Linux.</p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    3) Install for Linux.</p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    P.S.: You can also fixed a script yourself.</p>
-<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:600;\">Bugs and offers</span></p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">I will fix bugs possibly. I promise nothing about offers. For all questions:</p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  </p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  <span style=\" font-style:italic;\">e-mail: esalexeev@gmail.com</span></p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-style:italic;\">  Jabber: arcanis@jabber.ru</span></p>
-<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-style:italic;\">  ICQ: 407-398-235</span></p></body></html>""")
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:600;\">About</span></p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">A simple program that made &quot;Just-for-fun&quot;. It may be useful, for example, athletes, losing weight, or just monitoring their health. It isn\'t Trojan or Barmin\'s patch. When a user attempts to shoot in the leg yourself , it will be resist.</p>
+<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>
+<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:600;\">What does it do?</span></p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">What initially began as a simple program (so it still is) it has acquired different functions. Thus, in addition to rapid evaluation &quot;How many calories do I get when I eat %food&quot;, it can do more complex calculations or create menu. As well as working with a database and a small comfort for a user.</p>
+<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>
+<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:600;\">How to use</span></p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" text-decoration: underline;\">Main window:</span></p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  Enter name of food, weight in grams and click on &quot;Calculate&quot;. Click on &quot;Autocomlete&quot; will open autocomplete menu (or substitute automatically), click on &quot;Search window&quot; will open search window.</p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  <span style=\" font-style:italic;\">Hotkeys:</span></p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Ctrl+S - Open search  window</p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Ctrl+N - Add item to the database</p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Ctrl+W - Edit item in the database</p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Ctrl+M - Open window with advanced calculator. It can save calculations to file.</p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    F1     - This help</p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Tab    - Switch on objects</p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Enter (in the search line) - Open autocomplete menu</p>
+<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" text-decoration: underline;\">Search window:</span></p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  Introduce something. Get something in return.</p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  <span style=\" font-style:italic;\">Hotkeys:</span></p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Esc    - Close</p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Tab    - Switch on objects</p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Enter (in the search line) - Same as click on &quot;Search&quot;</p>
+<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" text-decoration: underline;\">Add item to the database:</span></p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  Add item to the database. You may leave numeric fields blank.</p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  <span style=\" font-style:italic;\">Hotkeys:</span></p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Esc    - Close</p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Tab    - Switch on objects</p>
+<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" text-decoration: underline;\">Edit item in the database:</span></p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  Edit database. Name can not be changed. You may leave numeric fields blank. Click on &quot;Autocomlete&quot; will open autocomplete menu (or substitute automatically), click on &quot;Search window&quot; will open search window, click on &quot;Remove&quot; will remove item from the database.</p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  <span style=\" font-style:italic;\">Hotkeys:</span></p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Esc    - Close</p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Tab    - Switch on objects</p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Enter (in the search line) - Open autocomplete menu</p>
+<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" text-decoration: underline;\">Create menu:</span></p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  You can do calculations with more number of items. And save it to file (&quot;Save as ...&quot;). Click on &quot;Autocomlete&quot; will open autocomplete menu (or substitute automatically), click on &quot;Search window&quot; will open search window, click on &quot;Search&quot; will search for item in the database and will update values, click on &quot;Add&quot; will add item and its weight in the list.</p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  <span style=\" font-style:italic;\">Hotkeys:</span></p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Esc    - Close</p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Tab    - Switch on objects</p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Enter (in the search line) - Open autocomplete menu</p>
+<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" text-decoration: underline;\">Select database:</span></p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  Select database and write it to configuration file.</p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  <span style=\" font-style:italic;\">Hotkeys:</span></p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Esc    - Close</p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Tab    - Switch on objects</p>
+<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" text-decoration: underline;\">Copy database:</span></p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  Copy current database.</p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  <span style=\" font-style:italic;\">Hotkeys:</span></p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Esc    - Close</p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Tab    - Switch on objects</p>
+<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" text-decoration: underline;\">Change the language:</span></p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  You can change the language.</p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  <span style=\" font-style:italic;\">Hotkeys:</span></p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Esc    - Close</p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Tab    - Switch on objects</p>
+<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" text-decoration: underline;\">Help:</span></p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  This help.</p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  <span style=\" font-style:italic;\">Hotkeys:</span></p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Esc    - Close</p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Tab    - Switch on objects</p>
+<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" text-decoration: underline;\">About:</span></p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  A small window &quot;About&quot;</p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-style:italic;\">  Hotkeys:</span></p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Esc    - Close</p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Tab    - Switch on objects</p>
+<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" text-decoration: underline;\">Autocomplete window:</span></p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  Substitutes selected position to search line. Selection is made mouse or arrow keys.</p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-style:italic;\">  Hotkeys:</span></p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    DoubleClick, Enter - Select position</p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Esc    - Close</p>
+<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" text-decoration: underline;\">Error:</span></p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  It is mythical window. A good user doesn\'t see it.</p>
+<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>
+<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:600;\">About database</span></p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">There are two databases made ​​in semi-automatic mode. First in English (mechanical translation) and second in Russian. The rest do yourself. I recommend use program interface for adding item to the database. However, I note that the database contains the line as follow string:</p>
+<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  item_name;;proteins;;fats;;carbohydrates;;food_energy;;glycemic_index</p>
+<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">All numbers are stored as float (that is something like 1.23 or 0.0). I recommend entering item name in lower case. Space are allowed. Also original database doesn't include data on glycemic index (it include 0.0 instead glycemic index). All numeric values ​​are recorded per 100 weight units.</p>
+<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>
+<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:600;\">About localization</span></p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Actually, I have nothing to say here. There are Russian and English. I seriously doubt that anything more will be added.</p>
+<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>
+<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:600;\">Specification</span></p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" text-decoration: underline;\">Dependencies:</span></p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  Python2.7</p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  PyQt4</p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  Qt4</p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  </p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" text-decoration: underline;\">Configuration file (food_gui.ini):</span></p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  <span style=\" font-style:italic;\">Windows</span> - the working directory</p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  <span style=\" font-style:italic;\">Linux</span>   - ~/.config/food_gui/</p>
+<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" text-decoration: underline;\">Database:</span></p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  I recommend copy it to your working directory (Windows) or to ~/.config/food_gui/ (Linux). But it could be anywhere.</p>
+<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" text-decoration: underline;\">Installation:</span></p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  <span style=\" font-style:italic;\">Linux:</span></p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    1) Make sure that everything is in place (dependencies, /usr/bin/python2.7).</p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    2) Run the script.</p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    3) You can copy the script to somewhere.</p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    or</p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    1b) Get binary file.</p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-style:italic;\">  Windows:</span></p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    1) Install all dependencies.</p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    2a) Run the script.</p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    or</p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    2b) Install pyinstaller.</p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    3b) Run the script &quot;pyinstaller.bat&quot;.</p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    4b) Run *.exe file (somewhere .\\food_gui\\dist\\).</p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    or</p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    1c) Get *.exe file. However its work for all systems isn\'t guatanteed (compiled under Windows7-x64).</p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-style:italic;\">  MacOS:</span></p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    1) Remove MacOS.</p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    2) Install Linux.</p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    3) Install for Linux.</p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    P.S.: You can also fixed a script yourself.</p>
+<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:600;\">Bugs and offers</span></p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">I will fix bugs possibly. I promise nothing about offers. For all questions:</p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  </p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  <span style=\" font-style:italic;\">e-mail: esalexeev@gmail.com</span></p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-style:italic;\">  Jabber: arcanis@jabber.ru</span></p>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-style:italic;\">  ICQ: 407-398-235</span></p></body></html>""")
    
     def keyPressEvent(self, event):
         if (event.key() == QtCore.Qt.Key_Escape):
@@ -2389,6 +2483,15 @@ class SearchWindow(QtGui.QMainWindow):
         global lang
         
         search = self.ui.search_line.text().toLower()
+        
+        if (len(search) == 0):
+            if (lang == 'RUS'):
+                inv_subs = u"<html><head/><body><p align=\"center\">Задано короткое имя</p></body></html>"
+            else:
+                inv_subs = u"<html><head/><body><p align=\"center\">Set too short food name</p></body></html>"
+            not_found = NotFound(parent=self, text=inv_subs)
+            not_found.show()
+            return
         
         with open(db,'r') as dbfile:
             i = 0
