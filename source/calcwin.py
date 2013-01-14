@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'calcwin.ui'
 #
-# Created: Fri Jan 11 17:33:39 2013
+# Created: Sun Jan 13 03:25:45 2013
 #      by: PyQt4 UI code generator 4.9.6
 #
 # WARNING! All changes made in this file will be lost!
@@ -71,15 +71,15 @@ class Ui_Calc_Window(object):
         self.glyc_sec_lab.setGeometry(QtCore.QRect(240, 140, 151, 21))
         self.glyc_sec_lab.setObjectName(_fromUtf8("glyc_sec_lab"))
         self.addbut = QtGui.QPushButton(self.centralwidget)
-        self.addbut.setGeometry(QtCore.QRect(300, 160, 91, 24))
+        self.addbut.setGeometry(QtCore.QRect(300, 162, 91, 24))
         self.addbut.setDefault(True)
         self.addbut.setObjectName(_fromUtf8("addbut"))
         self.mass_line = QtGui.QLineEdit(self.centralwidget)
-        self.mass_line.setGeometry(QtCore.QRect(90, 35, 211, 23))
+        self.mass_line.setGeometry(QtCore.QRect(90, 35, 121, 23))
         self.mass_line.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
         self.mass_line.setObjectName(_fromUtf8("mass_line"))
         self.mass_lab = QtGui.QLabel(self.centralwidget)
-        self.mass_lab.setGeometry(QtCore.QRect(10, 30, 81, 21))
+        self.mass_lab.setGeometry(QtCore.QRect(10, 35, 81, 21))
         self.mass_lab.setObjectName(_fromUtf8("mass_lab"))
         self.tot_ccal_lab = QtGui.QLabel(self.centralwidget)
         self.tot_ccal_lab.setGeometry(QtCore.QRect(10, 410, 151, 21))
@@ -123,14 +123,23 @@ class Ui_Calc_Window(object):
         self.deletebut.setGeometry(QtCore.QRect(205, 440, 91, 24))
         self.deletebut.setDefault(True)
         self.deletebut.setObjectName(_fromUtf8("deletebut"))
+        self.searchwinbut = QtGui.QPushButton(self.centralwidget)
+        self.searchwinbut.setGeometry(QtCore.QRect(10, 162, 101, 24))
+        self.searchwinbut.setDefault(True)
+        self.searchwinbut.setObjectName(_fromUtf8("searchwinbut"))
+        self.substitutebut = QtGui.QPushButton(self.centralwidget)
+        self.substitutebut.setGeometry(QtCore.QRect(215, 35, 91, 24))
+        self.substitutebut.setDefault(True)
+        self.substitutebut.setObjectName(_fromUtf8("substitutebut"))
         Calc_Window.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(Calc_Window)
-        QtCore.QObject.connect(self.exitbut, QtCore.SIGNAL(_fromUtf8("clicked()")), Calc_Window.close)
         QtCore.QMetaObject.connectSlotsByName(Calc_Window)
         Calc_Window.setTabOrder(self.search_line, self.mass_line)
-        Calc_Window.setTabOrder(self.mass_line, self.searchbut)
-        Calc_Window.setTabOrder(self.searchbut, self.addbut)
+        Calc_Window.setTabOrder(self.mass_line, self.substitutebut)
+        Calc_Window.setTabOrder(self.substitutebut, self.searchbut)
+        Calc_Window.setTabOrder(self.searchbut, self.searchwinbut)
+        Calc_Window.setTabOrder(self.searchwinbut, self.addbut)
         Calc_Window.setTabOrder(self.addbut, self.text_selected)
         Calc_Window.setTabOrder(self.text_selected, self.savebut)
         Calc_Window.setTabOrder(self.savebut, self.deletebut)
@@ -164,4 +173,6 @@ class Ui_Calc_Window(object):
         self.savebut.setText(_translate("Calc_Window", "Сохранить в файл", None))
         self.exitbut.setText(_translate("Calc_Window", "Закрыть", None))
         self.deletebut.setText(_translate("Calc_Window", "Очистить", None))
+        self.searchwinbut.setText(_translate("Calc_Window", "Окно поиска", None))
+        self.substitutebut.setText(_translate("Calc_Window", "Подставить", None))
 

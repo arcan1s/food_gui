@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'add.ui'
 #
-# Created: Fri Jan 11 17:37:59 2013
+# Created: Sun Jan 13 03:22:59 2013
 #      by: PyQt4 UI code generator 4.9.6
 #
 # WARNING! All changes made in this file will be lost!
@@ -38,15 +38,15 @@ class Ui_Add(object):
         self.okbut.setDefault(True)
         self.okbut.setObjectName(_fromUtf8("okbut"))
         self.prot_line = QtGui.QLineEdit(self.centralwidget)
-        self.prot_line.setGeometry(QtCore.QRect(82, 35, 231, 23))
+        self.prot_line.setGeometry(QtCore.QRect(162, 35, 151, 23))
         self.prot_line.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
         self.prot_line.setObjectName(_fromUtf8("prot_line"))
         self.lip_line = QtGui.QLineEdit(self.centralwidget)
-        self.lip_line.setGeometry(QtCore.QRect(82, 60, 231, 23))
+        self.lip_line.setGeometry(QtCore.QRect(162, 60, 151, 23))
         self.lip_line.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
         self.lip_line.setObjectName(_fromUtf8("lip_line"))
         self.carb_line = QtGui.QLineEdit(self.centralwidget)
-        self.carb_line.setGeometry(QtCore.QRect(82, 85, 231, 23))
+        self.carb_line.setGeometry(QtCore.QRect(162, 85, 151, 23))
         self.carb_line.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
         self.carb_line.setObjectName(_fromUtf8("carb_line"))
         self.ccal_line = QtGui.QLineEdit(self.centralwidget)
@@ -62,13 +62,13 @@ class Ui_Add(object):
         self.subs_lab.setGeometry(QtCore.QRect(10, 10, 61, 21))
         self.subs_lab.setObjectName(_fromUtf8("subs_lab"))
         self.prot_lab = QtGui.QLabel(self.centralwidget)
-        self.prot_lab.setGeometry(QtCore.QRect(10, 35, 61, 21))
+        self.prot_lab.setGeometry(QtCore.QRect(10, 35, 151, 21))
         self.prot_lab.setObjectName(_fromUtf8("prot_lab"))
         self.lip_lab = QtGui.QLabel(self.centralwidget)
-        self.lip_lab.setGeometry(QtCore.QRect(10, 60, 61, 20))
+        self.lip_lab.setGeometry(QtCore.QRect(10, 60, 151, 20))
         self.lip_lab.setObjectName(_fromUtf8("lip_lab"))
         self.carb_lab = QtGui.QLabel(self.centralwidget)
-        self.carb_lab.setGeometry(QtCore.QRect(10, 85, 61, 21))
+        self.carb_lab.setGeometry(QtCore.QRect(10, 85, 151, 21))
         self.carb_lab.setObjectName(_fromUtf8("carb_lab"))
         self.ccal_lab = QtGui.QLabel(self.centralwidget)
         self.ccal_lab.setGeometry(QtCore.QRect(10, 110, 151, 21))
@@ -83,7 +83,6 @@ class Ui_Add(object):
         Add.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(Add)
-        QtCore.QObject.connect(self.cancelbut, QtCore.SIGNAL(_fromUtf8("clicked()")), Add.close)
         QtCore.QMetaObject.connectSlotsByName(Add)
         Add.setTabOrder(self.subs_line, self.prot_line)
         Add.setTabOrder(self.prot_line, self.lip_line)

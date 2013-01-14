@@ -30,7 +30,7 @@
      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
     </property>
    </widget>
-   <widget class="QPushButton" name="searchbut">
+   <widget class="QPushButton" name="calcbut">
     <property name="geometry">
      <rect>
       <x>318</x>
@@ -140,7 +140,7 @@
    <widget class="QLabel" name="prot_sec_lab">
     <property name="geometry">
      <rect>
-      <x>230</x>
+      <x>250</x>
       <y>65</y>
       <width>151</width>
       <height>21</height>
@@ -153,7 +153,7 @@
    <widget class="QLabel" name="lip_sec_lab">
     <property name="geometry">
      <rect>
-      <x>230</x>
+      <x>250</x>
       <y>85</y>
       <width>151</width>
       <height>21</height>
@@ -166,7 +166,7 @@
    <widget class="QLabel" name="carb_sec_lab">
     <property name="geometry">
      <rect>
-      <x>230</x>
+      <x>250</x>
       <y>105</y>
       <width>151</width>
       <height>21</height>
@@ -179,7 +179,7 @@
    <widget class="QLabel" name="ccal_sec_lab">
     <property name="geometry">
      <rect>
-      <x>230</x>
+      <x>250</x>
       <y>125</y>
       <width>151</width>
       <height>21</height>
@@ -192,7 +192,7 @@
    <widget class="QLabel" name="glyc_sec_lab">
     <property name="geometry">
      <rect>
-      <x>230</x>
+      <x>250</x>
       <y>145</y>
       <width>151</width>
       <height>21</height>
@@ -200,6 +200,38 @@
     </property>
     <property name="text">
      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;right&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="searchbut">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>38</y>
+      <width>101</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Окно поиска</string>
+    </property>
+    <property name="default">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="substitutebut">
+    <property name="geometry">
+     <rect>
+      <x>225</x>
+      <y>38</y>
+      <width>91</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Подставить</string>
+    </property>
+    <property name="default">
+     <bool>true</bool>
     </property>
    </widget>
   </widget>
@@ -216,13 +248,11 @@
     <property name="title">
      <string>&amp;Меню</string>
     </property>
+    <addaction name="menu_search"/>
     <addaction name="menu_add"/>
     <addaction name="menu_edit"/>
     <addaction name="separator"/>
     <addaction name="menu_create"/>
-    <addaction name="separator"/>
-    <addaction name="menu_dbsel"/>
-    <addaction name="menu_dbcp"/>
     <addaction name="separator"/>
     <addaction name="menu_exit"/>
    </widget>
@@ -230,9 +260,20 @@
     <property name="title">
      <string>&amp;Справка</string>
     </property>
+    <addaction name="menu_help"/>
     <addaction name="menu_about"/>
    </widget>
+   <widget class="QMenu" name="menu_3">
+    <property name="title">
+     <string>&amp;Настройки</string>
+    </property>
+    <addaction name="menu_dbsel"/>
+    <addaction name="menu_dbcp"/>
+    <addaction name="separator"/>
+    <addaction name="menu_lang"/>
+   </widget>
    <addaction name="menu"/>
+   <addaction name="menu_3"/>
    <addaction name="menu_2"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
@@ -241,7 +282,7 @@
     <string>&amp;Добавить продукт в базу данных</string>
    </property>
    <property name="shortcut">
-    <string>Ctrl+A</string>
+    <string>Ctrl+N</string>
    </property>
   </action>
   <action name="menu_edit">
@@ -249,7 +290,7 @@
     <string>&amp;Редактировать базу данных</string>
    </property>
    <property name="shortcut">
-    <string>Ctrl+E</string>
+    <string>Ctrl+W</string>
    </property>
   </action>
   <action name="menu_create">
@@ -257,12 +298,7 @@
     <string>&amp;Создать меню</string>
    </property>
    <property name="shortcut">
-    <string>Ctrl+N</string>
-   </property>
-  </action>
-  <action name="menu_dbch">
-   <property name="text">
-    <string>&amp;Выбрать базу данных</string>
+    <string>Ctrl+M</string>
    </property>
   </action>
   <action name="menu_dbcp">
@@ -291,21 +327,31 @@
    <property name="text">
     <string>&amp;О программе</string>
    </property>
-   <property name="shortcut">
-    <string>F1</string>
-   </property>
-  </action>
-  <action name="menu_calc">
-   <property name="text">
-    <string>Р&amp;асчитать</string>
-   </property>
-   <property name="shortcut">
-    <string>Ctrl+C</string>
-   </property>
   </action>
   <action name="menu_dbsel">
    <property name="text">
-    <string>Выбрать базу данных</string>
+    <string>Выбрать &amp;базу данных</string>
+   </property>
+  </action>
+  <action name="menu_search">
+   <property name="text">
+    <string>&amp;Искать продукт в базе данных</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="menu_lang">
+   <property name="text">
+    <string>Выбрать &amp;язык</string>
+   </property>
+  </action>
+  <action name="menu_help">
+   <property name="text">
+    <string>&amp;Помощь</string>
+   </property>
+   <property name="shortcut">
+    <string>F1</string>
    </property>
   </action>
  </widget>
@@ -313,6 +359,8 @@
   <tabstop>search_line</tabstop>
   <tabstop>mass_line</tabstop>
   <tabstop>searchbut</tabstop>
+  <tabstop>substitutebut</tabstop>
+  <tabstop>calcbut</tabstop>
  </tabstops>
  <resources/>
  <connections>

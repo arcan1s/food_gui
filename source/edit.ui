@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>321</width>
-    <height>200</height>
+    <height>227</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -18,7 +18,7 @@
     <property name="geometry">
      <rect>
       <x>230</x>
-      <y>170</y>
+      <y>193</y>
       <width>81</width>
       <height>24</height>
      </rect>
@@ -34,7 +34,7 @@
     <property name="geometry">
      <rect>
       <x>145</x>
-      <y>170</y>
+      <y>193</y>
       <width>81</width>
       <height>24</height>
      </rect>
@@ -62,9 +62,9 @@
    <widget class="QLineEdit" name="carb_line">
     <property name="geometry">
      <rect>
-      <x>82</x>
-      <y>90</y>
-      <width>231</width>
+      <x>162</x>
+      <y>113</y>
+      <width>151</width>
       <height>23</height>
      </rect>
     </property>
@@ -75,9 +75,9 @@
    <widget class="QLineEdit" name="prot_line">
     <property name="geometry">
      <rect>
-      <x>82</x>
-      <y>40</y>
-      <width>231</width>
+      <x>162</x>
+      <y>63</y>
+      <width>151</width>
       <height>23</height>
      </rect>
     </property>
@@ -88,9 +88,9 @@
    <widget class="QLineEdit" name="lip_line">
     <property name="geometry">
      <rect>
-      <x>82</x>
-      <y>65</y>
-      <width>231</width>
+      <x>162</x>
+      <y>88</y>
+      <width>151</width>
       <height>23</height>
      </rect>
     </property>
@@ -102,7 +102,7 @@
     <property name="geometry">
      <rect>
       <x>162</x>
-      <y>115</y>
+      <y>138</y>
       <width>151</width>
       <height>23</height>
      </rect>
@@ -115,7 +115,7 @@
     <property name="geometry">
      <rect>
       <x>162</x>
-      <y>140</y>
+      <y>163</y>
       <width>151</width>
       <height>23</height>
      </rect>
@@ -128,7 +128,7 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>170</y>
+      <y>193</y>
       <width>81</width>
       <height>24</height>
      </rect>
@@ -144,8 +144,8 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>40</y>
-      <width>71</width>
+      <y>63</y>
+      <width>151</width>
       <height>21</height>
      </rect>
     </property>
@@ -157,8 +157,8 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>65</y>
-      <width>71</width>
+      <y>88</y>
+      <width>151</width>
       <height>21</height>
      </rect>
     </property>
@@ -170,8 +170,8 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>90</y>
-      <width>71</width>
+      <y>113</y>
+      <width>151</width>
       <height>21</height>
      </rect>
     </property>
@@ -183,7 +183,7 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>115</y>
+      <y>138</y>
       <width>151</width>
       <height>21</height>
      </rect>
@@ -196,7 +196,7 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>140</y>
+      <y>163</y>
       <width>151</width>
       <height>21</height>
      </rect>
@@ -218,10 +218,44 @@
      <string>Продукт</string>
     </property>
    </widget>
+   <widget class="QPushButton" name="searchbut">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>35</y>
+      <width>101</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Окно поиска</string>
+    </property>
+    <property name="default">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="substitutebut">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>35</y>
+      <width>91</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Подставить</string>
+    </property>
+    <property name="default">
+     <bool>true</bool>
+    </property>
+   </widget>
   </widget>
  </widget>
  <tabstops>
   <tabstop>search_line</tabstop>
+  <tabstop>searchbut</tabstop>
+  <tabstop>substitutebut</tabstop>
   <tabstop>prot_line</tabstop>
   <tabstop>lip_line</tabstop>
   <tabstop>carb_line</tabstop>
@@ -232,22 +266,5 @@
   <tabstop>cancelbut</tabstop>
  </tabstops>
  <resources/>
- <connections>
-  <connection>
-   <sender>cancelbut</sender>
-   <signal>clicked()</signal>
-   <receiver>Edit</receiver>
-   <slot>close()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>270</x>
-     <y>161</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>159</x>
-     <y>87</y>
-    </hint>
-   </hints>
-  </connection>
- </connections>
+ <connections/>
 </ui>

@@ -49,9 +49,9 @@
    <widget class="QLineEdit" name="prot_line">
     <property name="geometry">
      <rect>
-      <x>82</x>
+      <x>162</x>
       <y>35</y>
-      <width>231</width>
+      <width>151</width>
       <height>23</height>
      </rect>
     </property>
@@ -62,9 +62,9 @@
    <widget class="QLineEdit" name="lip_line">
     <property name="geometry">
      <rect>
-      <x>82</x>
+      <x>162</x>
       <y>60</y>
-      <width>231</width>
+      <width>151</width>
       <height>23</height>
      </rect>
     </property>
@@ -75,9 +75,9 @@
    <widget class="QLineEdit" name="carb_line">
     <property name="geometry">
      <rect>
-      <x>82</x>
+      <x>162</x>
       <y>85</y>
-      <width>231</width>
+      <width>151</width>
       <height>23</height>
      </rect>
     </property>
@@ -132,7 +132,7 @@
      <rect>
       <x>10</x>
       <y>35</y>
-      <width>61</width>
+      <width>151</width>
       <height>21</height>
      </rect>
     </property>
@@ -145,7 +145,7 @@
      <rect>
       <x>10</x>
       <y>60</y>
-      <width>61</width>
+      <width>151</width>
       <height>20</height>
      </rect>
     </property>
@@ -158,7 +158,7 @@
      <rect>
       <x>10</x>
       <y>85</y>
-      <width>61</width>
+      <width>151</width>
       <height>21</height>
      </rect>
     </property>
@@ -218,22 +218,5 @@
   <tabstop>cancelbut</tabstop>
  </tabstops>
  <resources/>
- <connections>
-  <connection>
-   <sender>cancelbut</sender>
-   <signal>clicked()</signal>
-   <receiver>Add</receiver>
-   <slot>close()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>270</x>
-     <y>141</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>159</x>
-     <y>119</y>
-    </hint>
-   </hints>
-  </connection>
- </connections>
+ <connections/>
 </ui>

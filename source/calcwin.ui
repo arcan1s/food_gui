@@ -190,7 +190,7 @@
     <property name="geometry">
      <rect>
       <x>300</x>
-      <y>160</y>
+      <y>162</y>
       <width>91</width>
       <height>24</height>
      </rect>
@@ -207,7 +207,7 @@
      <rect>
       <x>90</x>
       <y>35</y>
-      <width>211</width>
+      <width>121</width>
       <height>23</height>
      </rect>
     </property>
@@ -219,7 +219,7 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>30</y>
+      <y>35</y>
       <width>81</width>
       <height>21</height>
      </rect>
@@ -403,12 +403,46 @@
      <bool>true</bool>
     </property>
    </widget>
+   <widget class="QPushButton" name="searchwinbut">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>162</y>
+      <width>101</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Окно поиска</string>
+    </property>
+    <property name="default">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="substitutebut">
+    <property name="geometry">
+     <rect>
+      <x>215</x>
+      <y>35</y>
+      <width>91</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Подставить</string>
+    </property>
+    <property name="default">
+     <bool>true</bool>
+    </property>
+   </widget>
   </widget>
  </widget>
  <tabstops>
   <tabstop>search_line</tabstop>
   <tabstop>mass_line</tabstop>
+  <tabstop>substitutebut</tabstop>
   <tabstop>searchbut</tabstop>
+  <tabstop>searchwinbut</tabstop>
   <tabstop>addbut</tabstop>
   <tabstop>text_selected</tabstop>
   <tabstop>savebut</tabstop>
@@ -416,22 +450,5 @@
   <tabstop>exitbut</tabstop>
  </tabstops>
  <resources/>
- <connections>
-  <connection>
-   <sender>exitbut</sender>
-   <signal>clicked()</signal>
-   <receiver>Calc_Window</receiver>
-   <slot>close()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>345</x>
-     <y>451</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>199</x>
-     <y>233</y>
-    </hint>
-   </hints>
-  </connection>
- </connections>
+ <connections/>
 </ui>

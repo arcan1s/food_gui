@@ -1,0 +1,138 @@
+About
+A simple program that made "Just-for-fun". It may be useful, for example, athletes, losing weight, or just monitoring their health. It isn't Trojan or Barmin's patch. When a user attempts to shoot in the leg yourself , it will be resist.
+
+
+What does it do?
+What initially began as a simple program (so it still is) it has acquired different functions. Thus, in addition to rapid assessment "How many calories do I get when I eat %food", it can do more complex calculations or create menu. As well as working with a database and a small comfort for a user.
+
+
+How to use
+Main window:
+  Enter name of food, weight in grams and click on "Calculate". Click on "Autocomlete" will open autocomplete menu (or substitute automatically), click on "Search window" will open search window.
+  Hotkeys:
+    Ctrl+S - Open search  window
+    Ctrl+N - Add item to the database
+    Ctrl+W - Edit item in the database
+    Ctrl+M - Open window with advanced calculator. It can save calculations to file.
+    F1     - This help
+    Tab    - Switch on objects
+    Enter (in the search line) - Open autocomplete menu
+
+Search window:
+  Introduce something. Get something in return.
+  Hotkeys:
+    Esc    - Close
+    Tab    - Switch on objects
+    Enter (in the search line) - Same as click on "Search"
+
+Add item to the database:
+  Add item to the database. You may leave numeric fields blank.
+  Hotkeys:
+    Esc    - Close
+    Tab    - Switch on objects
+
+Edit item in the database:
+  Edit database. Name can not be changed. You may leave numeric fields blank. Click on "Autocomlete" will open autocomplete menu (or substitute automatically), click on "Search window" will open search window, click on "Remove" will remove item from the database.
+  Hotkeys:
+    Esc    - Close
+    Tab    - Switch on objects
+    Enter (in the search line) - Open autocomplete menu
+
+Create menu:
+  You can do calculations with more number of items. And save it to file ("Save as ..."). Click on "Autocomlete" will open autocomplete menu (or substitute automatically), click on "Search window" will open search window, click on "Search" will search for item in the database and will update values, click on "Add" will add item and its weight in the list.
+  Hotkeys:
+    Esc    - Close
+    Tab    - Switch on objects
+    Enter (in the search line) - Open autocomplete menu
+
+Select database:
+  Select database and write it to configuration file.
+  Hotkeys:
+    Esc    - Close
+    Tab    - Switch on objects
+
+Copy database:
+  Copy current database.
+  Hotkeys:
+    Esc    - Close
+    Tab    - Switch on objects
+
+Change the language:
+  You can change the language.
+  Hotkeys:
+    Esc    - Close
+    Tab    - Switch on objects
+
+Help:
+  This help.
+  Hotkeys:
+    Esc    - Close
+    Tab    - Switch on objects
+
+About:
+  A small window "About"
+  Hotkeys:
+    Esc    - Close
+    Tab    - Switch on objects
+
+Autocomplete window:
+  Substitutes selected position to search line. Selection is made mouse or arrow keys.
+  Hotkeys:
+    DoubleClick, Enter - Select position
+    Esc    - Close
+
+Error:
+  It is mythical window. A good user doesn't see it.
+
+
+About database
+There are two databases made ​​in semi-automatic mode. First in English and second in Russian. The rest do yourself. I recommend use program interface for adding item to the database. However, I note that the database contains the line as follow string:
+
+  item_name;;proteins;;fats;;carbohydrates;;food_energy;;glycemic_index
+
+All numbers are stored as float (that is something like 1.23 or 0.0). I recommend entering item name in lower case. Space are allowed.
+
+
+About localization
+Actually, I have nothing to say here. There are Russian and English. I seriously doubt that anything more will be added.
+
+
+Specification
+Dependencies:
+  Python2.7
+  PyQt4
+  Qt4
+  
+Configuration file (food_gui.ini):
+  Windows - the working directory
+  Linux   - ~/.config/food_gui/
+
+Database:
+  I recommend copy it to your working directory (Windows) or to ~/.config/food_gui/ (Linux). But it could be anywhere.
+
+Installation:
+  Linux:
+    1) Make sure that everything is in place (dependencies, /usr/bin/python2.7).
+    2) Run the script.
+    3) You can copy the script to somewhere.
+  Windows:
+    1) Install all dependencies.
+    2a) Run the script.
+    or
+    2b) Install pyinstaller.
+    3b) Run the script "pyinstaller.bat".
+    4b) Run *.exe file (somewhere .\food_gui\dist\).
+    or
+    1c) Get ready *.exe file. However its work for all systems isn't guatanteed (compiled under Windows7-x64).
+  MacOS:
+    1) Remove MacOS.
+    2) Install Linux.
+    3) Install for Linux.
+    P.S.: You can also fixed a script yourself.
+
+Bugs and offers
+I will fix bugs possibly. I promise nothing about offers. For all questions:
+  
+  e-mail: esalexeev@gmail.com
+  Jabber: arcanis@jabber.ru
+  ICQ: 407-398-235

@@ -22,6 +22,7 @@ from PyQt4 import QtCore, QtGui
 
 db = "db.dat"
 lang = "ENG"
+put_search_line = QtGui.QLineEdit
 put_prot_line = QtGui.QLineEdit
 put_lip_line = QtGui.QLineEdit
 put_carb_line = QtGui.QLineEdit
@@ -1063,72 +1064,27 @@ class AddWindow(QtGui.QMainWindow):
         if (len(self.ui.prot_line.text()) == 0):
             prot = 0.0
         else:
-            if (self.ui.prot_line.text().toFloat()[1] == False):
-                if (lang == 'RUS'):
-                    inv_subs = u"<html><head/><body><p align=\"center\">\""+self.ui.prot_line.text()+"\" не число</p></body></html>"
-                else:
-                    inv_subs = u"<html><head/><body><p align=\"center\">\""+self.ui.prot_line.text()+"\" isn't a number</p></body></html>"
-                not_found = NotFound(parent=self, text=inv_subs)
-                not_found.show()
-                return
-            else:
-                prot = self.ui.prot_line.text().toFloat()[0]
+            prot = float(self.ui.prot_line.text())
         
         if (len(self.ui.lip_line.text()) == 0):
             lip = 0.0
         else:
-            if (self.ui.lip_line.text().toFloat()[1] == False):
-                if (lang == 'RUS'):
-                    inv_subs = u"<html><head/><body><p align=\"center\">\""+self.ui.lip_line.text()+"\" не число</p></body></html>"
-                else:
-                    inv_subs = u"<html><head/><body><p align=\"center\">\""+self.ui.lip_line.text()+"\" isn't a number</p></body></html>"
-                not_found = NotFound(parent=self, text=inv_subs)
-                not_found.show()
-                return
-            else:
-                lip = self.ui.lip_line.text().toFloat()[0]
+            lip = float(self.ui.lip_line.text())
         
         if (len(self.ui.carb_line.text()) == 0):
             carb = 0.0
         else:
-            if (self.ui.carb_line.text().toFloat()[1] == False):
-                if (lang == 'RUS'):
-                    inv_subs = u"<html><head/><body><p align=\"center\">\""+self.ui.carb_line.text()+"\" не число</p></body></html>"
-                else:
-                    inv_subs = u"<html><head/><body><p align=\"center\">\""+self.ui.carb_line.text()+"\" isn't a number</p></body></html>"
-                not_found = NotFound(parent=self, text=inv_subs)
-                not_found.show()
-                return
-            else:
-                carb = self.ui.carb_line.text().toFloat()[0]
+            carb = float(self.ui.carb_line.text())
         
         if (len(self.ui.ccal_line.text()) == 0):
             ccal = 0.0
         else:
-            if (self.ui.ccal_line.text().toFloat()[1] == False):
-                if (lang == 'RUS'):
-                    inv_subs = u"<html><head/><body><p align=\"center\">\""+self.ui.ccal_line.text()+"\" не число</p></body></html>"
-                else:
-                    inv_subs = u"<html><head/><body><p align=\"center\">\""+self.ui.ccal_line.text()+"\" isn't a number</p></body></html>"
-                not_found = NotFound(parent=self, text=inv_subs)
-                not_found.show()
-                return
-            else:
-                ccal = self.ui.ccal_line.text().toFloat()[0]
+            ccal = float(self.ui.ccal_line.text())
         
         if (len(self.ui.glyc_line.text()) == 0):
             glyc = 0.0
         else:
-            if (self.ui.glyc_line.text().toFloat()[1] == False):
-                if (lang == 'RUS'):
-                    inv_subs = u"<html><head/><body><p align=\"center\">\""+self.ui.glyc_line.text()+"\" не число</p></body></html>"
-                else:
-                    inv_subs = u"<html><head/><body><p align=\"center\">\""+self.ui.glyc_line.text()+"\" isn't a number</p></body></html>"
-                not_found = NotFound(parent=self, text=inv_subs)
-                not_found.show()
-                return
-            else:
-                glyc = self.ui.glyc_line.text().toFloat()[0]
+            glyc = float(self.ui.glyc_line.text())
         
         dbold = db+".bckp"
         os.rename(db,  dbold)
@@ -1285,7 +1241,6 @@ class CalcWindow(QtGui.QMainWindow):
                 if (search == line.split(';;')[0]):
                     prop = [mass/100*float(num) for num in line.split(';;')[1:5]]
                     i = 1
-                    break
         
             if (i == 0):
                 if (lang == 'RUS'):
@@ -1340,6 +1295,7 @@ class CalcWindow(QtGui.QMainWindow):
     def complete(self):
         global db
         global lang
+        global put_search_line
         
         search = self.ui.search_line.text().toLower()
     
@@ -1370,7 +1326,8 @@ class CalcWindow(QtGui.QMainWindow):
         elif (i == 1):
             self.ui.search_line.setText(output)
         elif (i > 1):
-            complete_window = CompleteWindow (parent=self,  search=search,  put_search_line=self.ui.search_line)
+            put_search_line = self.ui.search_line
+            complete_window = CompleteWindow (parent=self,  search=search)
             complete_window.show()
     
     def save(self):
@@ -1427,7 +1384,6 @@ class CalcWindow(QtGui.QMainWindow):
                     prop = [mass/100*float(num) for num in line.split(';;')[1:5]]
                     glyc_fl = float(line.split(';;')[5])
                     i = 1
-                    break
         
         if (i == 0):
             if (lang == 'RUS'):
@@ -1453,23 +1409,16 @@ class CalcWindow(QtGui.QMainWindow):
     def keyPressEvent(self, event):
         if (event.key() == QtCore.Qt.Key_Escape):
             self.close_win()
-    
-    
+
+
 class CompleteWindow(QtGui.QMainWindow):
-    def __init__(self, parent=None,  search=None,  put_search_line=None, put_prot_line=None, put_lip_line=None, put_carb_line=None, put_ccal_line=None, put_glyc_line=None):
+    def __init__(self, parent=None,  search=None):
         QtGui.QMainWindow.__init__(self, parent)
         self.ui = Ui_Complete_Window()
         self.ui.setupUi(self)
         
         global db
         global lang
-        
-        self._put_search_line = put_search_line
-        self._put_prot_line = put_prot_line
-        self._put_lip_line = put_lip_line
-        self._put_carb_line = put_carb_line
-        self._put_ccal_line = put_ccal_line
-        self._put_glyc_line = put_glyc_line
         
         if (lang == 'RUS'):
             self.setWindowTitle(u"Подставить")
@@ -1494,26 +1443,76 @@ class CompleteWindow(QtGui.QMainWindow):
         QtCore.QObject.connect(self.ui.list, QtCore.SIGNAL("itemDoubleClicked(QListWidgetItem*)"), self.putitem)
         QtCore.QObject.connect(self.ui.list, QtCore.SIGNAL("itemActivated(QListWidgetItem*)"), self.putitem)
     
-    def putitem(self):        
+    def putitem(self):
+        global put_search_line
+        
         string = str(QtCore.QString.toUtf8(self.ui.list.currentItem().text()))
-        self._put_search_line.setText(string)
+        put_search_line.setText(string)
+        self.close()
+    
+    def keyPressEvent(self, event):
+        if (event.key() == QtCore.Qt.Key_Escape):
+            self.close()
+    
+    
+class CompleteWindowAdd(QtGui.QMainWindow):
+    def __init__(self, parent=None,  search=None):
+        QtGui.QMainWindow.__init__(self, parent)
+        self.ui = Ui_Complete_Window()
+        self.ui.setupUi(self)
         
-        if (self._put_prot_line != None):
-            with open(db,'r') as dbfile:
-                for line in dbfile:
-                    if (string == line.split(';;')[0]):
-                        prot = str(round(float(line.split(';;')[1]),  3))
-                        lip = str(round(float(line.split(';;')[2]),  3))
-                        carb = str(round(float(line.split(';;')[3]),  3))
-                        ccal = str(round(float(line.split(';;')[4]),  3))
-                        glyc = str(round(float(line.split(';;')[5]),  3))
-                        break
+        global db
+        global lang
         
-            self._put_prot_line.setText(prot)
-            self._put_lip_line.setText(lip)
-            self._put_carb_line.setText(carb)
-            self._put_ccal_line.setText(ccal)
-            self._put_glyc_line.setText(glyc)
+        if (lang == 'RUS'):
+            self.setWindowTitle(u"Подставить")
+            self.ui.exitbut.setText(u"Закрыть")
+        else:
+            self.setWindowTitle(u"Autocomplete")
+            self.ui.exitbut.setText(u"Close")
+    
+        with open(db,'r') as dbfile:
+            i = 0
+            for line in dbfile:
+                if (line.split(';;')[0].find(search) > -1):
+                    if (i == 0):
+                        text = line.split(';;')[0]
+                    else:
+                        text = text+';;'+line.split(';;')[0]
+                    i = i + 1
+
+        for string in text.split(';;'):
+            self.ui.list.addItem(string)
+        
+        QtCore.QObject.connect(self.ui.list, QtCore.SIGNAL("itemDoubleClicked(QListWidgetItem*)"), self.putitem)
+        QtCore.QObject.connect(self.ui.list, QtCore.SIGNAL("itemActivated(QListWidgetItem*)"), self.putitem)
+    
+    def putitem(self):
+        global put_search_line
+        global put_prot_line
+        global put_lip_line
+        global put_carb_line
+        global put_ccal_line
+        global put_glyc_line
+        
+        string = str(QtCore.QString.toUtf8(self.ui.list.currentItem().text()))
+        put_search_line.setText(string)
+        
+        with open(db,'r') as dbfile:
+            for line in dbfile:
+                if (string == line.split(';;')[0]):
+                    prot = str(round(float(line.split(';;')[1]),  3))
+                    lip = str(round(float(line.split(';;')[2]),  3))
+                    carb = str(round(float(line.split(';;')[3]),  3))
+                    ccal = str(round(float(line.split(';;')[4]),  3))
+                    glyc = str(round(float(line.split(';;')[5]),  3))
+                    break
+        
+        put_prot_line.setText(prot)
+        put_lip_line.setText(lip)
+        put_carb_line.setText(carb)
+        put_ccal_line.setText(ccal)
+        put_glyc_line.setText(glyc)
     
         self.close()
     
@@ -1677,7 +1676,7 @@ class DBselWindow(QtGui.QMainWindow):
                             config_new_file.write(line)
             
             mainwin = MainWindow()
-            mainwin.setup_database()
+            mainwin.database()
             os.remove (config_old)
             self.close()
     
@@ -1750,6 +1749,12 @@ class EditWindow(QtGui.QMainWindow):
     def complete(self):
         global db
         global lang
+        global put_search_line
+        global put_prot_line
+        global put_lip_line
+        global put_carb_line
+        global put_ccal_line
+        global put_glyc_line
         
         search = self.ui.search_line.text().toLower()
     
@@ -1794,8 +1799,15 @@ class EditWindow(QtGui.QMainWindow):
             self.ui.carb_line.setText(carb)
             self.ui.ccal_line.setText(ccal)
             self.ui.glyc_line.setText(glyc)
-        elif (i > 1):                        
-            complete_window = CompleteWindow (parent=self, search=search, put_search_line=self.ui.search_line, put_prot_line=self.ui.prot_line, put_lip_line=self.ui.lip_line, put_carb_line=self.ui.carb_line, put_ccal_line=self.ui.ccal_line, put_glyc_line=self.ui.glyc_line)
+        elif (i > 1):            
+            put_search_line = self.ui.search_line
+            put_prot_line = self.ui.prot_line
+            put_lip_line = self.ui.lip_line
+            put_carb_line = self.ui.carb_line
+            put_ccal_line = self.ui.ccal_line
+            put_glyc_line = self.ui.glyc_line
+            
+            complete_window = CompleteWindowAdd (parent=self,  search=search)
             complete_window.show()
     
     def delete(self):
@@ -1859,72 +1871,27 @@ class EditWindow(QtGui.QMainWindow):
         if (len(self.ui.prot_line.text()) == 0):
             prot = 0.0
         else:
-            if (self.ui.prot_line.text().toFloat()[1] == False):
-                if (lang == 'RUS'):
-                    inv_subs = u"<html><head/><body><p align=\"center\">\""+self.ui.prot_line.text()+"\" не число</p></body></html>"
-                else:
-                    inv_subs = u"<html><head/><body><p align=\"center\">\""+self.ui.prot_line.text()+"\" isn't a number</p></body></html>"
-                not_found = NotFound(parent=self, text=inv_subs)
-                not_found.show()
-                return
-            else:
-                prot = self.ui.prot_line.text().toFloat()[0]
+            prot = float(self.ui.prot_line.text())
         
         if (len(self.ui.lip_line.text()) == 0):
             lip = 0.0
         else:
-            if (self.ui.lip_line.text().toFloat()[1] == False):
-                if (lang == 'RUS'):
-                    inv_subs = u"<html><head/><body><p align=\"center\">\""+self.ui.lip_line.text()+"\" не число</p></body></html>"
-                else:
-                    inv_subs = u"<html><head/><body><p align=\"center\">\""+self.ui.lip_line.text()+"\" isn't a number</p></body></html>"
-                not_found = NotFound(parent=self, text=inv_subs)
-                not_found.show()
-                return
-            else:
-                lip = self.ui.lip_line.text().toFloat()[0]
+            lip = float(self.ui.lip_line.text())
         
         if (len(self.ui.carb_line.text()) == 0):
             carb = 0.0
         else:
-            if (self.ui.carb_line.text().toFloat()[1] == False):
-                if (lang == 'RUS'):
-                    inv_subs = u"<html><head/><body><p align=\"center\">\""+self.ui.carb_line.text()+"\" не число</p></body></html>"
-                else:
-                    inv_subs = u"<html><head/><body><p align=\"center\">\""+self.ui.carb_line.text()+"\" isn't a number</p></body></html>"
-                not_found = NotFound(parent=self, text=inv_subs)
-                not_found.show()
-                return
-            else:
-                carb = self.ui.carb_line.text().toFloat()[0]
+            carb = float(self.ui.carb_line.text())
         
         if (len(self.ui.ccal_line.text()) == 0):
             ccal = 0.0
         else:
-            if (self.ui.ccal_line.text().toFloat()[1] == False):
-                if (lang == 'RUS'):
-                    inv_subs = u"<html><head/><body><p align=\"center\">\""+self.ui.ccal_line.text()+"\" не число</p></body></html>"
-                else:
-                    inv_subs = u"<html><head/><body><p align=\"center\">\""+self.ui.ccal_line.text()+"\" isn't a number</p></body></html>"
-                not_found = NotFound(parent=self, text=inv_subs)
-                not_found.show()
-                return
-            else:
-                ccal = self.ui.ccal_line.text().toFloat()[0]
+            ccal = float(self.ui.ccal_line.text())
         
         if (len(self.ui.glyc_line.text()) == 0):
             glyc = 0.0
         else:
-            if (self.ui.glyc_line.text().toFloat()[1] == False):
-                if (lang == 'RUS'):
-                    inv_subs = u"<html><head/><body><p align=\"center\">\""+self.ui.glyc_line.text()+"\" не число</p></body></html>"
-                else:
-                    inv_subs = u"<html><head/><body><p align=\"center\">\""+self.ui.glyc_line.text()+"\" isn't a number</p></body></html>"
-                not_found = NotFound(parent=self, text=inv_subs)
-                not_found.show()
-                return
-            else:
-                glyc = self.ui.glyc_line.text().toFloat()[0]
+            glyc = float(self.ui.glyc_line.text())
         
         dbold = db + ".bckp"
         os.rename(db,  dbold)
@@ -2428,7 +2395,7 @@ class MainWindow(QtGui.QMainWindow):
         self.ui = Ui_Food()
         self.ui.setupUi(self)
 
-        self.setup_database()
+        self.database()
         self.setup_language()
         if (os.path.exists(db) == False):
             with open(db,  'w') as dbfile:
@@ -2488,7 +2455,7 @@ class MainWindow(QtGui.QMainWindow):
             self.ui.menu.setTitle(u"&Menu")
             self.ui.menu_2.setTitle(u"&Help")
             self.ui.menu_3.setTitle(u"&Settings")
-            self.ui.menu_add.setText(u"&Add item in database")
+            self.ui.menu_add.setText(u"&Add food in database")
             self.ui.menu_add.setShortcut(u"Ctrl+N")
             self.ui.menu_edit.setText(u"&Edit database")
             self.ui.menu_edit.setShortcut(u"Ctrl+W")
@@ -2499,7 +2466,7 @@ class MainWindow(QtGui.QMainWindow):
             self.ui.menu_exit.setShortcut(u"Ctrl+Q")
             self.ui.menu_about.setText(u"&About")
             self.ui.menu_dbsel.setText(u"Choose &database")
-            self.ui.menu_search.setText(u"&Search item in database")
+            self.ui.menu_search.setText(u"&Search food in database")
             self.ui.menu_search.setShortcut(u"Ctrl+S")
             self.ui.menu_lang.setText(u"&Language")
             self.ui.menu_help.setText(u"&Help")
@@ -2564,7 +2531,6 @@ class MainWindow(QtGui.QMainWindow):
                     prop = [mass/100*float(num) for num in line.split(';;')[1:5]]
                     glyc_fl = float(line.split(';;')[5])
                     i = 1
-                    break
         
         if (i == 0):
             if (lang == 'RUS'):
@@ -2590,6 +2556,7 @@ class MainWindow(QtGui.QMainWindow):
     def complete(self):
         global db
         global lang
+        global put_search_line
         
         search = self.ui.search_line.text().toLower()
     
@@ -2620,10 +2587,11 @@ class MainWindow(QtGui.QMainWindow):
         elif (i == 1):
             self.ui.search_line.setText(output)
         elif (i > 1):
-            complete_window = CompleteWindow (parent=self,  search=search,  put_search_line=self.ui.search_line)
+            put_search_line = self.ui.search_line
+            complete_window = CompleteWindow (parent=self,  search=search)
             complete_window.show()
     
-    def setup_database(self):
+    def database(self):
         global db
         
         if (sys.platform[0:3] == 'win'):
