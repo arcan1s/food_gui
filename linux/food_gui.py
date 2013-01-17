@@ -228,7 +228,7 @@ class Ui_About_Window(object):
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:\'Droid Sans\'; font-size:10pt; font-weight:400; font-style:normal;\">\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Food 1.1.0</p>\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Food 1.1.2</p>\n"
 "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Лицензия: GPL</p>\n"
 "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n"
 "<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Простенькая программа-калькулятор на питоне, подсчитывающая БЖУ, калорийность и гликемический индекс употребляемых продуктов на основании базы данных.</p>\n"
@@ -962,13 +962,18 @@ class AboutWindow(QtGui.QMainWindow):
         self.ui = Ui_About_Window()
         self.ui.setupUi(self)
         
+        self.load_text()
+    
+    def load_text(self):
+        global lang
+        
         if (lang == 'RUS'):
             self.setWindowTitle(u"О программе")
             self.ui.about.setHtml(u"""<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">
 <html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">
 p, li { white-space: pre-wrap; }
 </style></head><body style=\" font-family:\'Droid Sans\'; font-size:10pt; font-weight:400; font-style:normal;\">
-<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">food_gui 1.1.1</p>
+<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">food_gui 1.1.2</p>
 <p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Лицензия: GPL</p>
 <p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>
 <p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Простенькая программа-калькулятор на питоне, подсчитывающая БЖУ, калорийность и гликемический индекс употребляемых продуктов на основании базы данных.</p>
@@ -984,7 +989,7 @@ p, li { white-space: pre-wrap; }
 <html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">
 p, li { white-space: pre-wrap; }
 </style></head><body style=\" font-family:\'Droid Sans\'; font-size:10pt; font-weight:400; font-style:normal;\">
-<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">food_gui 1.1.1</p>
+<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">food_gui 1.1.2</p>
 <p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">License: GPL</p>
 <p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>
 <p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Simple program-calculator used self database and written on Python, that calculates proteins, fats, carbohydrates, food energy and glycemic index eaten food.</p>
@@ -994,7 +999,7 @@ p, li { white-space: pre-wrap; }
 <p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Jabber: arcanis@jabber.ru</p>
 <p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">ICQ: 407-398-235</p></body></html>""")
             self.ui.exit.setText("Close")
-    
+
     def keyPressEvent(self, event):
         if (event.key() == QtCore.Qt.Key_Escape):
             self.close()
@@ -1009,33 +1014,14 @@ class AddWindow(QtGui.QMainWindow):
         self.ui = Ui_Add()
         self.ui.setupUi(self)
         
+        self.load_text()
+        
         self.ui.subs_line.setText("")
         self.ui.prot_line.setText("0.0")
         self.ui.lip_line.setText("0.0")
         self.ui.carb_line.setText("0.0")
         self.ui.ccal_line.setText("0.0")
         self.ui.glyc_line.setText("0.0")
-        
-        if (lang == 'RUS'):
-            self.setWindowTitle(u"Добавить")
-            self.ui.cancelbut.setText(u"Отмена")
-            self.ui.okbut.setText(u"Ok")
-            self.ui.subs_lab.setText(u"Продукт")
-            self.ui.prot_lab.setText(u"Белки")
-            self.ui.lip_lab.setText(u"Жиры")
-            self.ui.carb_lab.setText(u"Углеводы")
-            self.ui.ccal_lab.setText(u"Калорийность, ккал")
-            self.ui.glyc_lab.setText(u"Гликемический индекс")
-        else:
-            self.setWindowTitle(u"Add")
-            self.ui.cancelbut.setText(u"Cancel")
-            self.ui.okbut.setText(u"Ok")
-            self.ui.subs_lab.setText(u"Food")
-            self.ui.prot_lab.setText(u"Proteins")
-            self.ui.lip_lab.setText(u"Fats")
-            self.ui.carb_lab.setText(u"Carbohydrates")
-            self.ui.ccal_lab.setText(u"Food energy, kcal")
-            self.ui.glyc_lab.setText(u"Glycemic index")
         
         QtCore.QObject.connect(self.ui.okbut, QtCore.SIGNAL("clicked()"), self.add)
         QtCore.QObject.connect(self.ui.cancelbut,  QtCore.SIGNAL("clicked()"),  self.close_win)
@@ -1209,6 +1195,30 @@ class AddWindow(QtGui.QMainWindow):
         self.ui.glyc_line.setText("0.0")
         
         self.close()
+    
+    def load_text(self):
+        global lang
+        
+        if (lang == 'RUS'):
+            self.setWindowTitle(u"Добавить")
+            self.ui.cancelbut.setText(u"Отмена")
+            self.ui.okbut.setText(u"Ok")
+            self.ui.subs_lab.setText(u"Продукт")
+            self.ui.prot_lab.setText(u"Белки")
+            self.ui.lip_lab.setText(u"Жиры")
+            self.ui.carb_lab.setText(u"Углеводы")
+            self.ui.ccal_lab.setText(u"Калорийность, ккал")
+            self.ui.glyc_lab.setText(u"Гликемический индекс")
+        else:
+            self.setWindowTitle(u"Add")
+            self.ui.cancelbut.setText(u"Cancel")
+            self.ui.okbut.setText(u"Ok")
+            self.ui.subs_lab.setText(u"Food")
+            self.ui.prot_lab.setText(u"Proteins")
+            self.ui.lip_lab.setText(u"Fats")
+            self.ui.carb_lab.setText(u"Carbohydrates")
+            self.ui.ccal_lab.setText(u"Food energy, kcal")
+            self.ui.glyc_lab.setText(u"Glycemic index")
 
     def keyPressEvent(self, event):
         if (event.key() == QtCore.Qt.Key_Escape):
@@ -1224,64 +1234,13 @@ class CalcWindow(QtGui.QMainWindow):
         self.ui = Ui_Calc_Window()
         self.ui.setupUi(self)
         
+        self.load_text()
+        
         self.ui.mass_line.setText("100")
         self.ui.tot_prot_sec_lab.setText("<html><head/><body><p align=\"right\">0.0</p></body></html>")
         self.ui.tot_lip_sec_lab.setText("<html><head/><body><p align=\"right\">0.0</p></body></html>")
         self.ui.tot_ccal_sec_lab.setText("<html><head/><body><p align=\"right\">0.0</p></body></html>")
         self.ui.tot_carb_sec_lab.setText("<html><head/><body><p align=\"right\">0.0</p></body></html>")
-        
-        if (lang == 'RUS'):
-            self.setWindowTitle(u"Расcчитать")
-            self.ui.search_lab.setText(u"Продукт")
-            self.ui.searchbut.setText(u"Искать")
-            self.ui.prot_lab.setText(u"Белки")
-            self.ui.lip_lab.setText(u"Жиры")
-            self.ui.prot_sec_lab.setText(u"<html><head/><body><p align=\"right\"><br/></p></body></html>")
-            self.ui.lip_sec_lab.setText(u"<html><head/><body><p align=\"right\"><br/></p></body></html>")
-            self.ui.carb_lab.setText(u"Углеводы")
-            self.ui.ccal_sec_lab.setText(u"<html><head/><body><p align=\"right\"><br/></p></body></html>")
-            self.ui.carb_sec_lab.setText(u"<html><head/><body><p align=\"right\"><br/></p></body></html>")
-            self.ui.ccal_lab.setText(u"Калорийность, ккал")
-            self.ui.glyc_lab.setText(u"Гликемический индекс")
-            self.ui.glyc_sec_lab.setText(u"<html><head/><body><p align=\"right\"><br/></p></body></html>")
-            self.ui.addbut.setText(u"Добавить")
-            self.ui.mass_lab.setText(u"Масса, г")
-            self.ui.tot_ccal_lab.setText(u"Калорийность, ккал")
-            self.ui.tot_lip_lab.setText(u"Жиры")
-            self.ui.tot_prot_lab.setText(u"Белки")
-            self.ui.tot_carb_lab.setText(u"Углеводы")
-            self.ui.total_lab.setText(u"<html><head/><body><p align=\"center\">Всего:</p></body></html>")
-            self.ui.savebut.setText(u"Сохранить в файл")
-            self.ui.exitbut.setText(u"Закрыть")
-            self.ui.deletebut.setText(u"Очистить")
-            self.ui.searchwinbut.setText(u"Окно поиска")
-            self.ui.substitutebut.setText(u"Подставить")
-        else:
-            self.setWindowTitle(u"Calculate")
-            self.ui.search_lab.setText(u"Food")
-            self.ui.searchbut.setText(u"Search")
-            self.ui.prot_lab.setText(u"Proteins")
-            self.ui.lip_lab.setText(u"Fats")
-            self.ui.prot_sec_lab.setText(u"<html><head/><body><p align=\"right\"><br/></p></body></html>")
-            self.ui.lip_sec_lab.setText(u"<html><head/><body><p align=\"right\"><br/></p></body></html>")
-            self.ui.carb_lab.setText(u"Carbohydrates")
-            self.ui.ccal_sec_lab.setText(u"<html><head/><body><p align=\"right\"><br/></p></body></html>")
-            self.ui.carb_sec_lab.setText(u"<html><head/><body><p align=\"right\"><br/></p></body></html>")
-            self.ui.ccal_lab.setText(u"Food energy, kcal")
-            self.ui.glyc_lab.setText(u"Glycemic index")
-            self.ui.glyc_sec_lab.setText(u"<html><head/><body><p align=\"right\"><br/></p></body></html>")
-            self.ui.addbut.setText(u"Add")
-            self.ui.mass_lab.setText(u"Weight, g")
-            self.ui.tot_ccal_lab.setText(u"Food energy, kcal")
-            self.ui.tot_lip_lab.setText(u"Fats")
-            self.ui.tot_prot_lab.setText(u"Proteins")
-            self.ui.tot_carb_lab.setText(u"Carbohydrates")
-            self.ui.total_lab.setText(u"<html><head/><body><p align=\"center\">Total:</p></body></html>")
-            self.ui.savebut.setText(u"Save as ...")
-            self.ui.exitbut.setText(u"Close")
-            self.ui.deletebut.setText(u"Clear")
-            self.ui.searchwinbut.setText(u"Search window")
-            self.ui.substitutebut.setText(u"Autocomplete")
         
         search_window = SearchWindow(parent=self)
         
@@ -1413,6 +1372,62 @@ class CalcWindow(QtGui.QMainWindow):
             complete_window = CompleteWindow (parent=self,  search=search,  put_search_line=self.ui.search_line)
             complete_window.show()
     
+    def load_text(self):
+        global lang
+        
+        if (lang == 'RUS'):
+            self.setWindowTitle(u"Расcчитать")
+            self.ui.search_lab.setText(u"Продукт")
+            self.ui.searchbut.setText(u"Искать")
+            self.ui.prot_lab.setText(u"Белки")
+            self.ui.lip_lab.setText(u"Жиры")
+            self.ui.prot_sec_lab.setText(u"<html><head/><body><p align=\"right\"><br/></p></body></html>")
+            self.ui.lip_sec_lab.setText(u"<html><head/><body><p align=\"right\"><br/></p></body></html>")
+            self.ui.carb_lab.setText(u"Углеводы")
+            self.ui.ccal_sec_lab.setText(u"<html><head/><body><p align=\"right\"><br/></p></body></html>")
+            self.ui.carb_sec_lab.setText(u"<html><head/><body><p align=\"right\"><br/></p></body></html>")
+            self.ui.ccal_lab.setText(u"Калорийность, ккал")
+            self.ui.glyc_lab.setText(u"Гликемический индекс")
+            self.ui.glyc_sec_lab.setText(u"<html><head/><body><p align=\"right\"><br/></p></body></html>")
+            self.ui.addbut.setText(u"Добавить")
+            self.ui.mass_lab.setText(u"Масса, г")
+            self.ui.tot_ccal_lab.setText(u"Калорийность, ккал")
+            self.ui.tot_lip_lab.setText(u"Жиры")
+            self.ui.tot_prot_lab.setText(u"Белки")
+            self.ui.tot_carb_lab.setText(u"Углеводы")
+            self.ui.total_lab.setText(u"<html><head/><body><p align=\"center\">Всего:</p></body></html>")
+            self.ui.savebut.setText(u"Сохранить в файл")
+            self.ui.exitbut.setText(u"Закрыть")
+            self.ui.deletebut.setText(u"Очистить")
+            self.ui.searchwinbut.setText(u"Окно поиска")
+            self.ui.substitutebut.setText(u"Подставить")
+        else:
+            self.setWindowTitle(u"Calculate")
+            self.ui.search_lab.setText(u"Food")
+            self.ui.searchbut.setText(u"Search")
+            self.ui.prot_lab.setText(u"Proteins")
+            self.ui.lip_lab.setText(u"Fats")
+            self.ui.prot_sec_lab.setText(u"<html><head/><body><p align=\"right\"><br/></p></body></html>")
+            self.ui.lip_sec_lab.setText(u"<html><head/><body><p align=\"right\"><br/></p></body></html>")
+            self.ui.carb_lab.setText(u"Carbohydrates")
+            self.ui.ccal_sec_lab.setText(u"<html><head/><body><p align=\"right\"><br/></p></body></html>")
+            self.ui.carb_sec_lab.setText(u"<html><head/><body><p align=\"right\"><br/></p></body></html>")
+            self.ui.ccal_lab.setText(u"Food energy, kcal")
+            self.ui.glyc_lab.setText(u"Glycemic index")
+            self.ui.glyc_sec_lab.setText(u"<html><head/><body><p align=\"right\"><br/></p></body></html>")
+            self.ui.addbut.setText(u"Add")
+            self.ui.mass_lab.setText(u"Weight, g")
+            self.ui.tot_ccal_lab.setText(u"Food energy, kcal")
+            self.ui.tot_lip_lab.setText(u"Fats")
+            self.ui.tot_prot_lab.setText(u"Proteins")
+            self.ui.tot_carb_lab.setText(u"Carbohydrates")
+            self.ui.total_lab.setText(u"<html><head/><body><p align=\"center\">Total:</p></body></html>")
+            self.ui.savebut.setText(u"Save as ...")
+            self.ui.exitbut.setText(u"Close")
+            self.ui.deletebut.setText(u"Clear")
+            self.ui.searchwinbut.setText(u"Search window")
+            self.ui.substitutebut.setText(u"Autocomplete")
+    
     def save(self):
         global lang
         
@@ -1504,19 +1519,14 @@ class CompleteWindow(QtGui.QMainWindow):
         global db
         global lang
         
+        self.load_text()
+        
         self._put_search_line = put_search_line
         self._put_prot_line = put_prot_line
         self._put_lip_line = put_lip_line
         self._put_carb_line = put_carb_line
         self._put_ccal_line = put_ccal_line
         self._put_glyc_line = put_glyc_line
-        
-        if (lang == 'RUS'):
-            self.setWindowTitle(u"Подставить")
-            self.ui.exitbut.setText(u"Закрыть")
-        else:
-            self.setWindowTitle(u"Autocomplete")
-            self.ui.exitbut.setText(u"Close")
     
         with open(db,'r') as dbfile:
             i = 0
@@ -1533,6 +1543,16 @@ class CompleteWindow(QtGui.QMainWindow):
         
         QtCore.QObject.connect(self.ui.list, QtCore.SIGNAL("itemDoubleClicked(QListWidgetItem*)"), self.putitem)
         QtCore.QObject.connect(self.ui.list, QtCore.SIGNAL("itemActivated(QListWidgetItem*)"), self.putitem)
+    
+    def load_text(self):
+        global lang
+        
+        if (lang == 'RUS'):
+            self.setWindowTitle(u"Подставить")
+            self.ui.exitbut.setText(u"Закрыть")
+        else:
+            self.setWindowTitle(u"Autocomplete")
+            self.ui.exitbut.setText(u"Close")
     
     def putitem(self):        
         string = str(QtCore.QString.toUtf8(self.ui.list.currentItem().text()))
@@ -1571,22 +1591,7 @@ class DBcpWindow(QtGui.QMainWindow):
         self.ui = Ui_db_cp_window()
         self.ui.setupUi(self)
         
-        if (lang == 'RUS'):
-            self.setWindowTitle(u"Скопировать базу данных")
-            self.ui.oldbut.setText(u"Обзор")
-            self.ui.newbut.setText(u"Обзор")
-            self.ui.cancelbut.setText(u"Отмена")
-            self.ui.okbut.setText(u"Ok")
-            self.ui.old_lab.setText(u"Старый файл")
-            self.ui.new_lab.setText(u"Новый файл")
-        else:
-            self.setWindowTitle(u"Copy database")
-            self.ui.oldbut.setText(u"Browse")
-            self.ui.newbut.setText(u"Browse")
-            self.ui.cancelbut.setText(u"Cancel")
-            self.ui.okbut.setText(u"Ok")
-            self.ui.old_lab.setText(u"Old file")
-            self.ui.new_lab.setText(u"New file")
+        self.load_text()
         
         if (sys.platform[0:3] == 'win'):
             db_new = os.getcwd()+"\\db_new.dat"
@@ -1627,6 +1632,26 @@ class DBcpWindow(QtGui.QMainWindow):
         
         shutil.copy(db_old,  db_new)
         self.close()
+    
+    def load_text(self):
+        global lang
+        
+        if (lang == 'RUS'):
+            self.setWindowTitle(u"Скопировать базу данных")
+            self.ui.oldbut.setText(u"Обзор")
+            self.ui.newbut.setText(u"Обзор")
+            self.ui.cancelbut.setText(u"Отмена")
+            self.ui.okbut.setText(u"Ok")
+            self.ui.old_lab.setText(u"Старый файл")
+            self.ui.new_lab.setText(u"Новый файл")
+        else:
+            self.setWindowTitle(u"Copy database")
+            self.ui.oldbut.setText(u"Browse")
+            self.ui.newbut.setText(u"Browse")
+            self.ui.cancelbut.setText(u"Cancel")
+            self.ui.okbut.setText(u"Ok")
+            self.ui.old_lab.setText(u"Old file")
+            self.ui.new_lab.setText(u"New file")
 
     def new_select(self):
         global lang
@@ -1663,16 +1688,7 @@ class DBselWindow(QtGui.QMainWindow):
         self.ui = Ui_DB_Select()
         self.ui.setupUi(self)
         
-        if (lang == 'RUS'):
-            self.setWindowTitle(u"Выбор базы данных")
-            self.ui.dbselect.setText(u"Ok")
-            self.ui.dbsearch.setText(u"Обзор")
-            self.ui.cancelbut.setText(u"Отмена")
-        else:
-            self.setWindowTitle(u"Select database")
-            self.ui.dbselect.setText(u"Ok")
-            self.ui.dbsearch.setText(u"Browse")
-            self.ui.cancelbut.setText(u"Cancel")
+        self.load_text()
         
         self.ui.dbstring.setText(db)
         
@@ -1721,6 +1737,20 @@ class DBselWindow(QtGui.QMainWindow):
             os.remove (config_old)
             self.close()
     
+    def load_text(self):
+        global lang
+        
+        if (lang == 'RUS'):
+            self.setWindowTitle(u"Выбор базы данных")
+            self.ui.dbselect.setText(u"Ok")
+            self.ui.dbsearch.setText(u"Обзор")
+            self.ui.cancelbut.setText(u"Отмена")
+        else:
+            self.setWindowTitle(u"Select database")
+            self.ui.dbselect.setText(u"Ok")
+            self.ui.dbsearch.setText(u"Browse")
+            self.ui.cancelbut.setText(u"Cancel")
+    
     def keyPressEvent(self, event):
         if (event.key() == QtCore.Qt.Key_Escape):
             self.close()
@@ -1735,32 +1765,7 @@ class EditWindow(QtGui.QMainWindow):
         self.ui = Ui_Edit()
         self.ui.setupUi(self)
         
-        if (lang == 'RUS'):
-            self.setWindowTitle(u"Редактировать")
-            self.ui.cancelbut.setText(u"Отмена")
-            self.ui.okbut.setText(u"Ok")
-            self.ui.deletebut.setText(u"Удалить")
-            self.ui.prot_lab.setText(u"Белки")
-            self.ui.lip_lab.setText(u"Жиры")
-            self.ui.carb_lab.setText(u"Углеводы")
-            self.ui.ccal_lab.setText(u"Калорийность, ккал")
-            self.ui.glyc_lab.setText(u"Гликемический индекс")
-            self.ui.subs_lab.setText(u"Продукт")
-            self.ui.searchbut.setText(u"Окно поиска")
-            self.ui.substitutebut.setText(u"Подставить")
-        else:
-            self.setWindowTitle(u"Edit")
-            self.ui.cancelbut.setText(u"Cancel")
-            self.ui.okbut.setText(u"Ok")
-            self.ui.deletebut.setText(u"Remove")
-            self.ui.prot_lab.setText(u"Proteins")
-            self.ui.lip_lab.setText(u"Fats")
-            self.ui.carb_lab.setText(u"Carbohydrates")
-            self.ui.ccal_lab.setText(u"Food energy, kcal")
-            self.ui.glyc_lab.setText(u"Glycemic index")
-            self.ui.subs_lab.setText(u"Food")
-            self.ui.searchbut.setText(u"Search window")
-            self.ui.substitutebut.setText(u"Autocomplete")
+        self.load_text()
         
         self.ui.prot_line.setText("0.0")
         self.ui.lip_line.setText("0.0")
@@ -2040,6 +2045,36 @@ class EditWindow(QtGui.QMainWindow):
             self.ui.ccal_line.setText("0.0")
             self.ui.glyc_line.setText("0.0")
     
+    def load_text(self):
+        global lang
+        
+        if (lang == 'RUS'):
+            self.setWindowTitle(u"Редактировать")
+            self.ui.cancelbut.setText(u"Отмена")
+            self.ui.okbut.setText(u"Ok")
+            self.ui.deletebut.setText(u"Удалить")
+            self.ui.prot_lab.setText(u"Белки")
+            self.ui.lip_lab.setText(u"Жиры")
+            self.ui.carb_lab.setText(u"Углеводы")
+            self.ui.ccal_lab.setText(u"Калорийность, ккал")
+            self.ui.glyc_lab.setText(u"Гликемический индекс")
+            self.ui.subs_lab.setText(u"Продукт")
+            self.ui.searchbut.setText(u"Окно поиска")
+            self.ui.substitutebut.setText(u"Подставить")
+        else:
+            self.setWindowTitle(u"Edit")
+            self.ui.cancelbut.setText(u"Cancel")
+            self.ui.okbut.setText(u"Ok")
+            self.ui.deletebut.setText(u"Remove")
+            self.ui.prot_lab.setText(u"Proteins")
+            self.ui.lip_lab.setText(u"Fats")
+            self.ui.carb_lab.setText(u"Carbohydrates")
+            self.ui.ccal_lab.setText(u"Food energy, kcal")
+            self.ui.glyc_lab.setText(u"Glycemic index")
+            self.ui.subs_lab.setText(u"Food")
+            self.ui.searchbut.setText(u"Search window")
+            self.ui.substitutebut.setText(u"Autocomplete")
+    
     def keyPressEvent(self, event):
         if (event.key() == QtCore.Qt.Key_Escape):
             self.close_win()
@@ -2052,6 +2087,11 @@ class Help(QtGui.QMainWindow):
         QtGui.QMainWindow.__init__(self,  parent)
         self.ui = Ui_Help_Window()
         self.ui.setupUi(self)
+        
+        self.load_text()
+    
+    def load_text(self):
+        global lang
         
         if (lang == 'RUS'):
             self.setWindowTitle(u"Помощь")
@@ -2356,25 +2396,26 @@ p, li { white-space: pre-wrap; }
 
 
 class Language(QtGui.QMainWindow):
-    def __init__(self,  parent=None):
+    def __init__(self,  parent=None, aboutwin=None, addwin=None, caclwin=None, dbcpwin=None, dbselwin=None, editwin=None, helpwin=None, notfoundwin=None, searchwin=None, mainwin=None):
+        global db
         global lang
         
         QtGui.QMainWindow.__init__(self,  parent)
         self.ui = Ui_Language()
         self.ui.setupUi(self)
         
-        if (lang =='RUS'):
-            self.setWindowTitle(u"Выбор языка")
-            self.ui.eng_radio.setText(u"English")
-            self.ui.rus_radio.setText(u"Русский")
-            self.ui.okbut.setText(u"Ok")
-            self.ui.cancelbut.setText(u"Отмена")
-        else:
-            self.setWindowTitle(u"Change language")
-            self.ui.eng_radio.setText(u"English")
-            self.ui.rus_radio.setText(u"Русский")
-            self.ui.okbut.setText(u"Ok")
-            self.ui.cancelbut.setText(u"Cancel")
+        self._aboutwin = aboutwin
+        self._addwin = addwin
+        self._caclwin = caclwin
+        self._dbcpwin = dbcpwin
+        self._dbselwin = dbselwin
+        self._editwin = editwin
+        self._helpwin = helpwin
+        self._notfoundwin = notfoundwin
+        self._searchwin = searchwin
+        self._mainwin = mainwin
+        
+        self.load_text()
 
         if (lang == 'RUS'):
             self.ui.rus_radio.setChecked(True)
@@ -2398,7 +2439,24 @@ class Language(QtGui.QMainWindow):
         
         self.close()
     
+    def load_text(self):
+        global lang        
+        
+        if (lang =='RUS'):
+            self.setWindowTitle(u"Выбор языка")
+            self.ui.eng_radio.setText(u"English")
+            self.ui.rus_radio.setText(u"Русский")
+            self.ui.okbut.setText(u"Ok")
+            self.ui.cancelbut.setText(u"Отмена")
+        else:
+            self.setWindowTitle(u"Change language")
+            self.ui.eng_radio.setText(u"English")
+            self.ui.rus_radio.setText(u"Русский")
+            self.ui.okbut.setText(u"Ok")
+            self.ui.cancelbut.setText(u"Cancel")
+    
     def setup_language(self):
+        global db
         global lang
         
         if (self.ui.rus_radio.isChecked()):
@@ -2422,9 +2480,47 @@ class Language(QtGui.QMainWindow):
                     else:
                         config_new_file.write(line)
         
-        mainwin = MainWindow()
-        mainwin.setup_language()
+        mainwindow = MainWindow()
+        mainwindow.setup_language()
         os.remove (config_old)
+        
+        self._aboutwin.load_text()
+        self._addwin.load_text()
+        self._caclwin.load_text()
+        self._dbcpwin.load_text()
+        self._dbselwin.load_text()
+        self._editwin.load_text()
+        self._helpwin.load_text()
+        self.load_text()
+        self._notfoundwin.load_text()
+        self._searchwin.load_text()
+        self._mainwin.load_text()
+        
+        if (sys.platform[0:3] == 'win'):
+            if (os.path.exists(os.getcwd()+"\\db_rus.dat")):
+                db_old = db+".old"
+                if (os.path.exists(db_old)):
+                    os.remove (db_old)
+                os.rename(db,  db_old)
+                if (lang=='RUS'):
+                    db_standart = os.getcwd()+"\\db_rus.dat"
+                    shutil.copy(db_standart, db)
+                else:
+                    db_standart = os.getcwd()+"\\db_eng.dat"
+                    shutil.copy(db_standart, db)
+        else:
+            if (os.path.exists("/usr/lib/food_gui/db_eng.dat")):
+                db_old = db+".old"
+                if (os.path.exists(db_old)):
+                    os.remove (db_old)
+                os.rename(db,  db_old)
+                if (lang=='RUS'):
+                    db_standart = "/usr/lib/food_gui/db_rus.dat"
+                    shutil.copy(db_standart, db)
+                else:
+                    db_standart = "/usr/lib/food_gui/db_eng.dat"
+                    shutil.copy(db_standart, db)
+        
         self.close()
     
     def keyPressEvent(self, event):
@@ -2440,6 +2536,14 @@ class NotFound(QtGui.QMainWindow):
         self.ui = Ui_NotFound()
         self.ui.setupUi(self)
         
+        self.load_text()
+        
+        if (text != None):
+            self.ui.label.setText(text)
+
+    def load_text(self):
+        global lang
+        
         if (lang =='RUS'):
             self.setWindowTitle(u"Ошибка!")
             self.ui.label.setText(u"<html><head/><body><p align=\"justify\"><br></p></body></html>")
@@ -2448,8 +2552,6 @@ class NotFound(QtGui.QMainWindow):
             self.setWindowTitle(u"Error!")
             self.ui.label.setText(u"<html><head/><body><p align=\"justify\"><br></p></body></html>")
             self.ui.okbut.setText(u"Ok")
-        
-        self.ui.label.setText(text)
 
 class SearchWindow(QtGui.QMainWindow):
     def __init__(self, parent=None):
@@ -2459,14 +2561,7 @@ class SearchWindow(QtGui.QMainWindow):
         self.ui = Ui_Search_Window()
         self.ui.setupUi(self)
         
-        if (lang == 'RUS'):
-            self.setWindowTitle(u"Поиск")
-            self.ui.exitbut.setText(u"Закрыть")
-            self.ui.searchbut.setText(u"Искать")
-        else:
-            self.setWindowTitle(u"Search")
-            self.ui.exitbut.setText(u"Close")
-            self.ui.searchbut.setText(u"Search")
+        self.load_text()
         
         QtCore.QObject.connect(self.ui.exitbut, QtCore.SIGNAL("clicked()"), self.close_win)
         QtCore.QObject.connect(self.ui.searchbut, QtCore.SIGNAL("clicked()"), self.search)
@@ -2477,6 +2572,18 @@ class SearchWindow(QtGui.QMainWindow):
         self.ui.search_box.clear()
         
         self.close()
+    
+    def load_text(self):
+        global lang
+        
+        if (lang == 'RUS'):
+            self.setWindowTitle(u"Поиск")
+            self.ui.exitbut.setText(u"Закрыть")
+            self.ui.searchbut.setText(u"Искать")
+        else:
+            self.setWindowTitle(u"Search")
+            self.ui.exitbut.setText(u"Close")
+            self.ui.searchbut.setText(u"Search")
     
     def search(self):
         global db
@@ -2529,80 +2636,31 @@ class MainWindow(QtGui.QMainWindow):
         self.setup_database()
         self.setup_language()
         if (os.path.exists(db) == False):
-            with open(db,  'w') as dbfile:
-                dbfile.write("")
+            if (sys.platform[0:3] == 'win'):
+                if (os.path.exists(os.getcwd()+"\\db_rus.dat")):
+                    if (lang=='RUS'):
+                        db_standart = os.getcwd()+"\\db_rus.dat"
+                        shutil.copy(db_standart, db)
+                    else:
+                        db_standart = os.getcwd()+"\\db_eng.dat"
+                        shutil.copy(db_standart, db)
+                else:
+                    with open(db,  'w') as dbfile:                                      
+                        dbfile.write("") 
+            else:
+                if (os.path.exists("/usr/lib/food_gui/db_eng.dat")):
+                    if (lang=='RUS'):
+                        db_standart = "/usr/lib/food_gui/db_rus.dat"
+                        shutil.copy(db_standart, db)
+                    else:
+                        db_standart = "/usr/lib/food_gui/db_eng.dat"
+                        shutil.copy(db_standart, db)
+                else:
+                    with open(db,  'w') as dbfile:                                      
+                        dbfile.write("") 
         
-        if (lang == 'RUS'):
-            self.setWindowTitle(u"Food_gui")
-            self.ui.calcbut.setText(u"Посчитать")
-            self.ui.mass_lab.setText(u"Масса, г")
-            self.ui.prot_lab.setText(u"Белки")
-            self.ui.lip_lab.setText(u"Жиры")
-            self.ui.carb_lab.setText(u"Углеводы")
-            self.ui.ccal_lab.setText(u"Калорийность, ккал")
-            self.ui.glyc_lab.setText(u"Гликемический индекс")
-            self.ui.prot_sec_lab.setText(u"<html><head/><body><p align=\"right\"><br/></p></body></html>")
-            self.ui.lip_sec_lab.setText(u"<html><head/><body><p align=\"right\"><br/></p></body></html>")
-            self.ui.carb_sec_lab.setText(u"<html><head/><body><p align=\"right\"><br/></p></body></html>")
-            self.ui.ccal_sec_lab.setText(u"<html><head/><body><p align=\"right\"><br/></p></body></html>")
-            self.ui.glyc_sec_lab.setText(u"<html><head/><body><p align=\"right\"><br/></p></body></html>")
-            self.ui.searchbut.setText(u"Окно поиска")
-            self.ui.substitutebut.setText(u"Подставить")
-            self.ui.menu.setTitle(u"&Меню")
-            self.ui.menu_2.setTitle(u"&Справка")
-            self.ui.menu_3.setTitle(u"&Настройки")
-            self.ui.menu_add.setText(u"&Добавить продукт в базу данных")
-            self.ui.menu_add.setShortcut(u"Ctrl+N")
-            self.ui.menu_edit.setText(u"&Редактировать базу данных")
-            self.ui.menu_edit.setShortcut(u"Ctrl+W")
-            self.ui.menu_create.setText(u"&Создать меню")
-            self.ui.menu_create.setShortcut(u"Ctrl+M")
-            self.ui.menu_dbcp.setText(u"С&копировать базу данных")
-            self.ui.menu_exit.setText(u"&Выход")
-            self.ui.menu_exit.setShortcut(u"Ctrl+Q")
-            self.ui.menu_about.setText(u"&О программе")
-            self.ui.menu_dbsel.setText(u"Выбрать &базу данных")
-            self.ui.menu_search.setText(u"&Искать продукт в базе данных")
-            self.ui.menu_search.setShortcut(u"Ctrl+S")
-            self.ui.menu_lang.setText(u"Выбрать &язык")
-            self.ui.menu_help.setText(u"&Помощь")
-            self.ui.menu_help.setShortcut(u"F1")
-        else:
-            self.setWindowTitle(u"Food_gui")
-            self.ui.calcbut.setText(u"Calculate")
-            self.ui.mass_lab.setText(u"Weight, g")
-            self.ui.prot_lab.setText(u"Proteins")
-            self.ui.lip_lab.setText(u"Fats")
-            self.ui.carb_lab.setText(u"Carbohydrates")
-            self.ui.ccal_lab.setText(u"Food energy, kcal")
-            self.ui.glyc_lab.setText(u"Glycemic index")
-            self.ui.prot_sec_lab.setText(u"<html><head/><body><p align=\"right\"><br/></p></body></html>")
-            self.ui.lip_sec_lab.setText(u"<html><head/><body><p align=\"right\"><br/></p></body></html>")
-            self.ui.carb_sec_lab.setText(u"<html><head/><body><p align=\"right\"><br/></p></body></html>")
-            self.ui.ccal_sec_lab.setText(u"<html><head/><body><p align=\"right\"><br/></p></body></html>")
-            self.ui.glyc_sec_lab.setText(u"<html><head/><body><p align=\"right\"><br/></p></body></html>")
-            self.ui.searchbut.setText(u"Search window")
-            self.ui.substitutebut.setText(u"Autocomplete")
-            self.ui.menu.setTitle(u"&Menu")
-            self.ui.menu_2.setTitle(u"&Help")
-            self.ui.menu_3.setTitle(u"&Settings")
-            self.ui.menu_add.setText(u"&Add item in database")
-            self.ui.menu_add.setShortcut(u"Ctrl+N")
-            self.ui.menu_edit.setText(u"&Edit database")
-            self.ui.menu_edit.setShortcut(u"Ctrl+W")
-            self.ui.menu_create.setText(u"&Create menu")
-            self.ui.menu_create.setShortcut(u"Ctrl+M")
-            self.ui.menu_dbcp.setText(u"&Copy database")
-            self.ui.menu_exit.setText(u"E&xit")
-            self.ui.menu_exit.setShortcut(u"Ctrl+Q")
-            self.ui.menu_about.setText(u"&About")
-            self.ui.menu_dbsel.setText(u"Choose &database")
-            self.ui.menu_search.setText(u"&Search item in database")
-            self.ui.menu_search.setShortcut(u"Ctrl+S")
-            self.ui.menu_lang.setText(u"&Language")
-            self.ui.menu_help.setText(u"&Help")
-            self.ui.menu_help.setShortcut(u"F1")
-        
+        self.load_text()
+
         self.ui.mass_line.setText("100")
         
         about_window = AboutWindow (parent=self)
@@ -2612,8 +2670,9 @@ class MainWindow(QtGui.QMainWindow):
         dbselect_window = DBselWindow (parent=self)
         edit_window = EditWindow (parent=self)
         help_window = Help (parent=self)
-        lang_window = Language (parent=self)
+        notfound_window = NotFound (parent=self)
         search_window = SearchWindow (parent=self)
+        lang_window = Language (parent=self, aboutwin=about_window, addwin=add_window, caclwin=calc_window, dbcpwin=dbcp_window, dbselwin=dbselect_window, editwin=edit_window, helpwin=help_window, notfoundwin=notfound_window, searchwin=search_window, mainwin=self)
         
         QtCore.QObject.connect(self.ui.menu_about, QtCore.SIGNAL("triggered()"), about_window.show)
         QtCore.QObject.connect(self.ui.menu_add, QtCore.SIGNAL("triggered()"), add_window.show)
@@ -2720,6 +2779,80 @@ class MainWindow(QtGui.QMainWindow):
         elif (i > 1):
             complete_window = CompleteWindow (parent=self,  search=search,  put_search_line=self.ui.search_line)
             complete_window.show()
+    
+    def load_text(self):
+        global lang
+        
+        if (lang == 'RUS'):
+            self.setWindowTitle(u"Food_gui")
+            self.ui.calcbut.setText(u"Посчитать")
+            self.ui.mass_lab.setText(u"Масса, г")
+            self.ui.prot_lab.setText(u"Белки")
+            self.ui.lip_lab.setText(u"Жиры")
+            self.ui.carb_lab.setText(u"Углеводы")
+            self.ui.ccal_lab.setText(u"Калорийность, ккал")
+            self.ui.glyc_lab.setText(u"Гликемический индекс")
+            self.ui.prot_sec_lab.setText(u"<html><head/><body><p align=\"right\"><br/></p></body></html>")
+            self.ui.lip_sec_lab.setText(u"<html><head/><body><p align=\"right\"><br/></p></body></html>")
+            self.ui.carb_sec_lab.setText(u"<html><head/><body><p align=\"right\"><br/></p></body></html>")
+            self.ui.ccal_sec_lab.setText(u"<html><head/><body><p align=\"right\"><br/></p></body></html>")
+            self.ui.glyc_sec_lab.setText(u"<html><head/><body><p align=\"right\"><br/></p></body></html>")
+            self.ui.searchbut.setText(u"Окно поиска")
+            self.ui.substitutebut.setText(u"Подставить")
+            self.ui.menu.setTitle(u"&Меню")
+            self.ui.menu_2.setTitle(u"&Справка")
+            self.ui.menu_3.setTitle(u"&Настройки")
+            self.ui.menu_add.setText(u"&Добавить продукт в базу данных")
+            self.ui.menu_add.setShortcut(u"Ctrl+N")
+            self.ui.menu_edit.setText(u"&Редактировать базу данных")
+            self.ui.menu_edit.setShortcut(u"Ctrl+W")
+            self.ui.menu_create.setText(u"&Создать меню")
+            self.ui.menu_create.setShortcut(u"Ctrl+M")
+            self.ui.menu_dbcp.setText(u"С&копировать базу данных")
+            self.ui.menu_exit.setText(u"&Выход")
+            self.ui.menu_exit.setShortcut(u"Ctrl+Q")
+            self.ui.menu_about.setText(u"&О программе")
+            self.ui.menu_dbsel.setText(u"Выбрать &базу данных")
+            self.ui.menu_search.setText(u"&Искать продукт в базе данных")
+            self.ui.menu_search.setShortcut(u"Ctrl+S")
+            self.ui.menu_lang.setText(u"Выбрать &язык")
+            self.ui.menu_help.setText(u"&Помощь")
+            self.ui.menu_help.setShortcut(u"F1")
+        else:
+            self.setWindowTitle(u"Food_gui")
+            self.ui.calcbut.setText(u"Calculate")
+            self.ui.mass_lab.setText(u"Weight, g")
+            self.ui.prot_lab.setText(u"Proteins")
+            self.ui.lip_lab.setText(u"Fats")
+            self.ui.carb_lab.setText(u"Carbohydrates")
+            self.ui.ccal_lab.setText(u"Food energy, kcal")
+            self.ui.glyc_lab.setText(u"Glycemic index")
+            self.ui.prot_sec_lab.setText(u"<html><head/><body><p align=\"right\"><br/></p></body></html>")
+            self.ui.lip_sec_lab.setText(u"<html><head/><body><p align=\"right\"><br/></p></body></html>")
+            self.ui.carb_sec_lab.setText(u"<html><head/><body><p align=\"right\"><br/></p></body></html>")
+            self.ui.ccal_sec_lab.setText(u"<html><head/><body><p align=\"right\"><br/></p></body></html>")
+            self.ui.glyc_sec_lab.setText(u"<html><head/><body><p align=\"right\"><br/></p></body></html>")
+            self.ui.searchbut.setText(u"Search window")
+            self.ui.substitutebut.setText(u"Autocomplete")
+            self.ui.menu.setTitle(u"&Menu")
+            self.ui.menu_2.setTitle(u"&Help")
+            self.ui.menu_3.setTitle(u"&Settings")
+            self.ui.menu_add.setText(u"&Add item in database")
+            self.ui.menu_add.setShortcut(u"Ctrl+N")
+            self.ui.menu_edit.setText(u"&Edit database")
+            self.ui.menu_edit.setShortcut(u"Ctrl+W")
+            self.ui.menu_create.setText(u"&Create menu")
+            self.ui.menu_create.setShortcut(u"Ctrl+M")
+            self.ui.menu_dbcp.setText(u"&Copy database")
+            self.ui.menu_exit.setText(u"E&xit")
+            self.ui.menu_exit.setShortcut(u"Ctrl+Q")
+            self.ui.menu_about.setText(u"&About")
+            self.ui.menu_dbsel.setText(u"Choose &database")
+            self.ui.menu_search.setText(u"&Search item in database")
+            self.ui.menu_search.setShortcut(u"Ctrl+S")
+            self.ui.menu_lang.setText(u"&Language")
+            self.ui.menu_help.setText(u"&Help")
+            self.ui.menu_help.setShortcut(u"F1")
     
     def setup_database(self):
         global db
