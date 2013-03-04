@@ -1,4 +1,4 @@
-#!/usr/bin/python2.7
+#!/usr/bin/python2
 # -*- coding: utf-8 -*-
 
 # Do not touch!
