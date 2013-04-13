@@ -2,8 +2,8 @@
 
 # Form implementation generated from reading ui file 'language.ui'
 #
-# Created: Sun Jan 13 00:37:47 2013
-#      by: PyQt4 UI code generator 4.9.6
+# Created: Sat Apr 13 17:21:18 2013
+#      by: PyQt4 UI code generator 4.10
 #
 # WARNING! All changes made in this file will be lost!
 
@@ -26,23 +26,47 @@ except AttributeError:
 class Ui_Language(object):
     def setupUi(self, Language):
         Language.setObjectName(_fromUtf8("Language"))
-        Language.resize(232, 68)
+        Language.resize(232, 66)
+        Language.setMinimumSize(QtCore.QSize(232, 66))
         self.centralwidget = QtGui.QWidget(Language)
+        self.centralwidget.setMinimumSize(QtCore.QSize(232, 66))
         self.centralwidget.setObjectName(_fromUtf8("centralwidget"))
-        self.eng_radio = QtGui.QRadioButton(self.centralwidget)
-        self.eng_radio.setGeometry(QtCore.QRect(10, 10, 99, 21))
-        self.eng_radio.setObjectName(_fromUtf8("eng_radio"))
+        self.gridLayout = QtGui.QGridLayout(self.centralwidget)
+        self.gridLayout.setObjectName(_fromUtf8("gridLayout"))
         self.rus_radio = QtGui.QRadioButton(self.centralwidget)
-        self.rus_radio.setGeometry(QtCore.QRect(10, 35, 99, 21))
+        self.rus_radio.setMinimumSize(QtCore.QSize(100, 25))
+        self.rus_radio.setMaximumSize(QtCore.QSize(16777215, 25))
         self.rus_radio.setObjectName(_fromUtf8("rus_radio"))
-        self.okbut = QtGui.QPushButton(self.centralwidget)
-        self.okbut.setGeometry(QtCore.QRect(130, 10, 91, 24))
-        self.okbut.setDefault(True)
-        self.okbut.setObjectName(_fromUtf8("okbut"))
+        self.gridLayout.addWidget(self.rus_radio, 1, 0, 1, 1)
         self.cancelbut = QtGui.QPushButton(self.centralwidget)
-        self.cancelbut.setGeometry(QtCore.QRect(130, 35, 91, 24))
+        sizePolicy = QtGui.QSizePolicy(QtGui.QSizePolicy.Fixed, QtGui.QSizePolicy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.cancelbut.sizePolicy().hasHeightForWidth())
+        self.cancelbut.setSizePolicy(sizePolicy)
+        self.cancelbut.setMinimumSize(QtCore.QSize(100, 25))
+        self.cancelbut.setMaximumSize(QtCore.QSize(100, 25))
         self.cancelbut.setDefault(True)
         self.cancelbut.setObjectName(_fromUtf8("cancelbut"))
+        self.gridLayout.addWidget(self.cancelbut, 1, 1, 1, 1)
+        self.eng_radio = QtGui.QRadioButton(self.centralwidget)
+        self.eng_radio.setMinimumSize(QtCore.QSize(100, 25))
+        self.eng_radio.setMaximumSize(QtCore.QSize(16777215, 25))
+        self.eng_radio.setObjectName(_fromUtf8("eng_radio"))
+        self.gridLayout.addWidget(self.eng_radio, 0, 0, 1, 1)
+        self.okbut = QtGui.QPushButton(self.centralwidget)
+        sizePolicy = QtGui.QSizePolicy(QtGui.QSizePolicy.Fixed, QtGui.QSizePolicy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.okbut.sizePolicy().hasHeightForWidth())
+        self.okbut.setSizePolicy(sizePolicy)
+        self.okbut.setMinimumSize(QtCore.QSize(100, 25))
+        self.okbut.setMaximumSize(QtCore.QSize(100, 25))
+        self.okbut.setDefault(True)
+        self.okbut.setObjectName(_fromUtf8("okbut"))
+        self.gridLayout.addWidget(self.okbut, 0, 1, 1, 1)
+        spacerItem = QtGui.QSpacerItem(20, 40, QtGui.QSizePolicy.Minimum, QtGui.QSizePolicy.Expanding)
+        self.gridLayout.addItem(spacerItem, 2, 0, 1, 2)
         Language.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(Language)
@@ -53,8 +77,8 @@ class Ui_Language(object):
 
     def retranslateUi(self, Language):
         Language.setWindowTitle(_translate("Language", "Change language", None))
-        self.eng_radio.setText(_translate("Language", "English", None))
         self.rus_radio.setText(_translate("Language", "Русский", None))
-        self.okbut.setText(_translate("Language", "Ok", None))
         self.cancelbut.setText(_translate("Language", "Отмена", None))
+        self.eng_radio.setText(_translate("Language", "English", None))
+        self.okbut.setText(_translate("Language", "Ok", None))
 

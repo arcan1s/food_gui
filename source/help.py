@@ -2,8 +2,8 @@
 
 # Form implementation generated from reading ui file 'help.ui'
 #
-# Created: Sun Jan 13 16:47:40 2013
-#      by: PyQt4 UI code generator 4.9.6
+# Created: Sat Apr 13 17:18:45 2013
+#      by: PyQt4 UI code generator 4.10
 #
 # WARNING! All changes made in this file will be lost!
 
@@ -27,24 +27,38 @@ class Ui_Help_Window(object):
     def setupUi(self, Help_Window):
         Help_Window.setObjectName(_fromUtf8("Help_Window"))
         Help_Window.resize(583, 431)
+        Help_Window.setMinimumSize(QtCore.QSize(583, 431))
         self.centralwidget = QtGui.QWidget(Help_Window)
+        self.centralwidget.setMinimumSize(QtCore.QSize(583, 431))
         self.centralwidget.setObjectName(_fromUtf8("centralwidget"))
+        self.gridLayout = QtGui.QGridLayout(self.centralwidget)
+        self.gridLayout.setObjectName(_fromUtf8("gridLayout"))
+        self.text = QtGui.QTextBrowser(self.centralwidget)
+        self.text.setObjectName(_fromUtf8("text"))
+        self.gridLayout.addWidget(self.text, 0, 0, 1, 1)
+        self.horizontalLayout = QtGui.QHBoxLayout()
+        self.horizontalLayout.setObjectName(_fromUtf8("horizontalLayout"))
+        spacerItem = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
+        self.horizontalLayout.addItem(spacerItem)
         self.exitbut = QtGui.QPushButton(self.centralwidget)
-        self.exitbut.setGeometry(QtCore.QRect(480, 400, 91, 24))
+        sizePolicy = QtGui.QSizePolicy(QtGui.QSizePolicy.Fixed, QtGui.QSizePolicy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.exitbut.sizePolicy().hasHeightForWidth())
+        self.exitbut.setSizePolicy(sizePolicy)
+        self.exitbut.setMinimumSize(QtCore.QSize(100, 25))
+        self.exitbut.setMaximumSize(QtCore.QSize(100, 25))
         self.exitbut.setDefault(True)
         self.exitbut.setObjectName(_fromUtf8("exitbut"))
-        self.text = QtGui.QTextBrowser(self.centralwidget)
-        self.text.setGeometry(QtCore.QRect(10, 10, 561, 381))
-        self.text.setObjectName(_fromUtf8("text"))
+        self.horizontalLayout.addWidget(self.exitbut)
+        self.gridLayout.addLayout(self.horizontalLayout, 1, 0, 1, 1)
         Help_Window.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(Help_Window)
-        QtCore.QObject.connect(self.exitbut, QtCore.SIGNAL(_fromUtf8("clicked()")), Help_Window.close)
         QtCore.QMetaObject.connectSlotsByName(Help_Window)
 
     def retranslateUi(self, Help_Window):
         Help_Window.setWindowTitle(_translate("Help_Window", "Помощь", None))
-        self.exitbut.setText(_translate("Help_Window", "Закрыть", None))
         self.text.setHtml(_translate("Help_Window", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
@@ -189,4 +203,5 @@ class Ui_Help_Window(object):
 "<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">  <span style=\" font-style:italic;\">e-mail: esalexeev@gmail.com</span></p>\n"
 "<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-style:italic;\">  Jabber: arcanis@jabber.ru</span></p>\n"
 "<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-style:italic;\">  ICQ: 407-398-235</span></p></body></html>", None))
+        self.exitbut.setText(_translate("Help_Window", "Закрыть", None))
 

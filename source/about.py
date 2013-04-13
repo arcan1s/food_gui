@@ -2,8 +2,8 @@
 
 # Form implementation generated from reading ui file 'about.ui'
 #
-# Created: Sun Jan 13 03:31:10 2013
-#      by: PyQt4 UI code generator 4.9.6
+# Created: Sat Apr 13 16:59:53 2013
+#      by: PyQt4 UI code generator 4.10
 #
 # WARNING! All changes made in this file will be lost!
 
@@ -27,22 +27,37 @@ class Ui_About_Window(object):
     def setupUi(self, About_Window):
         About_Window.setObjectName(_fromUtf8("About_Window"))
         About_Window.resize(361, 236)
+        About_Window.setMinimumSize(QtCore.QSize(361, 236))
         self.centralwidget = QtGui.QWidget(About_Window)
+        self.centralwidget.setMinimumSize(QtCore.QSize(361, 236))
         self.centralwidget.setObjectName(_fromUtf8("centralwidget"))
+        self.gridLayout = QtGui.QGridLayout(self.centralwidget)
+        self.gridLayout.setObjectName(_fromUtf8("gridLayout"))
         self.about = QtGui.QTextBrowser(self.centralwidget)
         self.about.setEnabled(True)
-        self.about.setGeometry(QtCore.QRect(0, 0, 361, 211))
         self.about.setFocusPolicy(QtCore.Qt.NoFocus)
         self.about.setAutoFillBackground(True)
         self.about.setObjectName(_fromUtf8("about"))
+        self.gridLayout.addWidget(self.about, 0, 1, 1, 1)
+        self.horizontalLayout = QtGui.QHBoxLayout()
+        self.horizontalLayout.setObjectName(_fromUtf8("horizontalLayout"))
+        spacerItem = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
+        self.horizontalLayout.addItem(spacerItem)
         self.exit = QtGui.QPushButton(self.centralwidget)
-        self.exit.setGeometry(QtCore.QRect(260, 210, 95, 24))
+        sizePolicy = QtGui.QSizePolicy(QtGui.QSizePolicy.Fixed, QtGui.QSizePolicy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.exit.sizePolicy().hasHeightForWidth())
+        self.exit.setSizePolicy(sizePolicy)
+        self.exit.setMinimumSize(QtCore.QSize(100, 25))
+        self.exit.setMaximumSize(QtCore.QSize(100, 25))
         self.exit.setDefault(True)
         self.exit.setObjectName(_fromUtf8("exit"))
+        self.horizontalLayout.addWidget(self.exit)
+        self.gridLayout.addLayout(self.horizontalLayout, 1, 1, 1, 1)
         About_Window.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(About_Window)
-        QtCore.QObject.connect(self.exit, QtCore.SIGNAL(_fromUtf8("clicked()")), About_Window.close)
         QtCore.QMetaObject.connectSlotsByName(About_Window)
 
     def retranslateUi(self, About_Window):
