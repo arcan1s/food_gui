@@ -10,6 +10,7 @@ license=("GPL")
 arch=('i686' 'x86_64')
 makedepends=('git')
 depends=('python2-pyqt')
+source=('')
 
 _gitroot="git://github.com/arcan1s/food_gui.git"
 _gitname="food_gui"
