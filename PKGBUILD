@@ -9,7 +9,7 @@ arch=('i686' 'x86_64')
 url="https://github.com/arcan1s/food_gui"
 license=('GPL')
 depends=('python2-pyqt4')
-source=(https://github.com/arcan1s/food_gui/raw/master/linux/${pkgname}-${pkgver}-src.zip)
+source=(https://github.com/arcan1s/food_gui/releases/download/V.${pkgver}/${pkgname}-${pkgver}-src.zip)
 md5sums=('0dd253d8f2dcb1f739dea3309de6a15d')
 
 package()
