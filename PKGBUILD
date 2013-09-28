@@ -10,7 +10,7 @@ url="https://github.com/arcan1s/food_gui"
 license=('GPL')
 depends=('python2-pyqt4')
 source=(https://github.com/arcan1s/food_gui/releases/download/V.${pkgver}/${pkgname}-${pkgver}-src.zip)
-md5sums=('0dd253d8f2dcb1f739dea3309de6a15d')
+md5sums=('f4f6df25131af05ae4ec8b03936cedc9')
 
 package()
 {

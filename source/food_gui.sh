@@ -30,4 +30,4 @@ until [ -z $1 ]; do
   shift
 done
 
-xterm -e "python2 /usr/lib/python2.7/site-packages/food_gui.py"
+python2 /usr/lib/python2.7/site-packages/food_gui.py
