@@ -118,7 +118,7 @@ class Ui_db_cp_window(object):
         self.gridLayout.addItem(spacerItem1, 3, 0, 1, 1)
         db_cp_window.setCentralWidget(self.centralwidget)
 
-        self.retranslateUi(db_cp_window)
+        #self.retranslateUi(db_cp_window)
         QtCore.QMetaObject.connectSlotsByName(db_cp_window)
 
     def retranslateUi(self, db_cp_window):

@@ -38,7 +38,7 @@ class Ui_Help_Window(object):
         self.text.setObjectName(_fromUtf8("text"))
         Help_Window.setCentralWidget(self.centralwidget)
 
-        self.retranslateUi(Help_Window)
+        #self.retranslateUi(Help_Window)
         QtCore.QObject.connect(self.exitbut, QtCore.SIGNAL(_fromUtf8("clicked()")), Help_Window.close)
         QtCore.QMetaObject.connectSlotsByName(Help_Window)
 

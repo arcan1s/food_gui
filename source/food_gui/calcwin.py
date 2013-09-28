@@ -381,7 +381,7 @@ class Ui_Calc_Window(object):
         self.gridLayout.addLayout(self.horizontalLayout_13, 14, 0, 1, 1)
         Calc_Window.setCentralWidget(self.centralwidget)
 
-        self.retranslateUi(Calc_Window)
+        #self.retranslateUi(Calc_Window)
         QtCore.QMetaObject.connectSlotsByName(Calc_Window)
 
     def retranslateUi(self, Calc_Window):

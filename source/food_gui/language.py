@@ -69,7 +69,7 @@ class Ui_Language(object):
         self.gridLayout.addItem(spacerItem, 2, 0, 1, 2)
         Language.setCentralWidget(self.centralwidget)
 
-        self.retranslateUi(Language)
+        #self.retranslateUi(Language)
         QtCore.QMetaObject.connectSlotsByName(Language)
         Language.setTabOrder(self.eng_radio, self.rus_radio)
         Language.setTabOrder(self.rus_radio, self.okbut)

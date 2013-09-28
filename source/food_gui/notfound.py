@@ -61,7 +61,7 @@ class Ui_NotFound(object):
         self.gridLayout.addItem(spacerItem2, 2, 0, 1, 1)
         NotFound.setCentralWidget(self.centralwidget)
 
-        self.retranslateUi(NotFound)
+        #self.retranslateUi(NotFound)
         QtCore.QMetaObject.connectSlotsByName(NotFound)
 
     def retranslateUi(self, NotFound):

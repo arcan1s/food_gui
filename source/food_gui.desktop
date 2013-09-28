@@ -1,0 +1,10 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Name=Food GUI
+Comment=A simple calculator, that calculates proteins, fats, carbohydrates, food energy and glycemic index
+Exec=food_gui
+Icon=food_gui.png
+Terminal=false
+Encoding=UTF-8
+Type=Application
+Categories=Qt;Office

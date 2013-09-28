@@ -55,7 +55,7 @@ class Ui_Complete_Window(object):
         self.gridLayout.addLayout(self.horizontalLayout, 1, 0, 1, 1)
         Complete_Window.setCentralWidget(self.centralwidget)
 
-        self.retranslateUi(Complete_Window)
+        #self.retranslateUi(Complete_Window)
         QtCore.QMetaObject.connectSlotsByName(Complete_Window)
 
     def retranslateUi(self, Complete_Window):

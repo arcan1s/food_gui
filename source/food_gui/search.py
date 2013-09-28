@@ -78,7 +78,7 @@ class Ui_Search_Window(object):
         self.gridLayout.addLayout(self.horizontalLayout_2, 3, 0, 1, 1)
         Search_Window.setCentralWidget(self.centralwidget)
 
-        self.retranslateUi(Search_Window)
+        #self.retranslateUi(Search_Window)
         QtCore.QMetaObject.connectSlotsByName(Search_Window)
         Search_Window.setTabOrder(self.search_line, self.search_box)
 

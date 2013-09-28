@@ -54,7 +54,7 @@ class Ui_Help_Window(object):
         self.gridLayout.addLayout(self.horizontalLayout, 1, 0, 1, 1)
         Help_Window.setCentralWidget(self.centralwidget)
 
-        self.retranslateUi(Help_Window)
+        #self.retranslateUi(Help_Window)
         QtCore.QMetaObject.connectSlotsByName(Help_Window)
 
     def retranslateUi(self, Help_Window):

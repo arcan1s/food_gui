@@ -88,7 +88,7 @@ class Ui_DB_Select(object):
         self.gridLayout.addItem(spacerItem1, 2, 0, 1, 1)
         DB_Select.setCentralWidget(self.centralwidget)
 
-        self.retranslateUi(DB_Select)
+        #self.retranslateUi(DB_Select)
         QtCore.QMetaObject.connectSlotsByName(DB_Select)
 
     def retranslateUi(self, DB_Select):

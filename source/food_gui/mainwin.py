@@ -278,7 +278,7 @@ class Ui_Food(object):
         self.menubar.addAction(self.menu_3.menuAction())
         self.menubar.addAction(self.menu_2.menuAction())
 
-        self.retranslateUi(Food)
+        #self.retranslateUi(Food)
         QtCore.QObject.connect(self.menu_exit, QtCore.SIGNAL(_fromUtf8("triggered()")), Food.close)
         QtCore.QMetaObject.connectSlotsByName(Food)
 
